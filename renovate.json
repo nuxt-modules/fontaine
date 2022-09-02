@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>nuxt/renovate-config-nuxt"],
+  "ignoreDeps": [
+    "@​docus/docs-theme",
+    "@​docus/github",
+    "@​docus/docs-theme-edge",
+    "@​docus/github-edge"
+  ],
+  "packageRules": [
+    {
+      "groupName": "nuxt core",
+      "groupSlug": "nuxt",
+      "matchPackageNames": ["nuxt", "nuxt3"],
+      "matchPackagePatterns": ["^@nuxt/"]
+    }
+  ]
+}
