@@ -38,6 +38,14 @@ import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
   modules: ['nuxt-font-metrics'],
+  // If you are using a Google font or you don't have a @font-face declaration
+  // for a font you're using, you can declare them here.
+  //
+  // In most cases this is not necessary.
+  //
+  // fontMetrics: {
+  //   fonts: ['Inter', { family: 'Some Custom Font', src: '/path/to/custom/font.woff2' }],
+  // },
 })
 ```
 
