@@ -8,19 +8,20 @@ interface FontMetricsTransformPluginOptions {
   css?: { value?: string }
   fallbacks: string[]
   resolvePath?: (path: string) => string | URL
+  sourcemap?: boolean
 }
 
 export const FontMetricsTransformPlugin = createUnplugin(
   (options: FontMetricsTransformPluginOptions) => {
-    const cssContext = options.css = options.css || {}
+    const cssContext = (options.css = options.css || {})
     cssContext.value = ''
     return {
       name: 'nuxt-font-metrics-transform',
       enforce: 'pre',
-      transformInclude (id) {
+      transformInclude(id) {
         return id.endsWith('.css')
       },
-      async transform (code, id) {
+      async transform(code, id) {
         const s = new MagicString(code)
         const faceRanges: [start: number, end: number][] = []
 
@@ -32,8 +33,13 @@ export const FontMetricsTransformPlugin = createUnplugin(
           const { family, source } = parseFontFace(match[0])
           if (!family) continue
 
-          const metrics = (await getMetricsForFamily(family)) ||
-            (source ? await readMetrics(options.resolvePath ? options.resolvePath(source) : source).catch(() => null) : null)
+          const metrics =
+            (await getMetricsForFamily(family)) ||
+            (source
+              ? await readMetrics(options.resolvePath ? options.resolvePath(source) : source).catch(
+                  () => null
+                )
+              : null)
 
           if (metrics) {
             const fontFace = generateFontFace(metrics, {
@@ -56,14 +62,19 @@ export const FontMetricsTransformPlugin = createUnplugin(
           s.overwrite(
             index,
             index + match[0].length,
-            ' ' + [families[0], `"${generateOverrideName(families[0])}"`, ...families.slice(1)].join(', ')
+            ' ' +
+              [families[0], `"${generateOverrideName(families[0])}"`, ...families.slice(1)].join(
+                ', '
+              )
           )
         }
 
         if (s.hasChanged()) {
           return {
             code: s.toString(),
-            map: s.generateMap({ source: id, includeContent: true }),
+            map: options.sourcemap
+              ? s.generateMap({ source: id, includeContent: true })
+              : undefined,
           }
         }
       },

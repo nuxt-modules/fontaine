@@ -11,9 +11,10 @@ import {
 } from '@nuxt/kit'
 import { join } from 'pathe'
 import { hasProtocol } from 'ufo'
-import { getMetricsForFamily, readMetrics } from './metrics'
-import { FontMetricsTransformPlugin } from './transform'
 import { generateFontFace, generateOverrideName } from './css'
+import { getMetricsForFamily, readMetrics } from './metrics'
+import { NitroTransformPlugin } from './nitro-plugin'
+import { FontMetricsTransformPlugin } from './transform'
 
 interface CustomFont {
   /** The font family name. This will be used to generate the override name and also to load cached metrics, if possible. */
@@ -62,7 +63,8 @@ export default defineNuxtModule<ModuleOptions>({
     const css = (async () => {
       let css = ''
       for (const font of options.fonts) {
-        const { family, src, overrideName, fallbacks } = typeof font === 'string' ? { family: font } as CustomFont : font
+        const { family, src, overrideName, fallbacks } =
+          typeof font === 'string' ? ({ family: font } as CustomFont) : font
 
         let metrics = await getMetricsForFamily(family)
 
@@ -89,31 +91,39 @@ export default defineNuxtModule<ModuleOptions>({
     if (options.inject) {
       const resolvePath = (id: string) => {
         if (hasProtocol(id)) return id
-        if (isAbsolute(id)) return pathToFileURL(join(nuxt.options.srcDir, nuxt.options.dir.public, id))
+        if (isAbsolute(id))
+          return pathToFileURL(join(nuxt.options.srcDir, nuxt.options.dir.public, id))
         return pathToFileURL(resolveAlias(id))
       }
-      addVitePlugin(FontMetricsTransformPlugin.vite({ fallbacks: options.fallbacks, resolvePath, css: cssContext }), { server: false })
-      addWebpackPlugin(FontMetricsTransformPlugin.webpack({ fallbacks: options.fallbacks, resolvePath, css: cssContext }), { server: false })
+      const transformOptions = {
+        fallbacks: options.fallbacks,
+        resolvePath,
+        css: cssContext,
+        sourcemap: nuxt.options.sourcemap,
+      }
+      addVitePlugin(FontMetricsTransformPlugin.vite(transformOptions), { server: false })
+      addWebpackPlugin(FontMetricsTransformPlugin.webpack(transformOptions), { server: false })
       nuxt.hook('nitro:config', config => {
-        config.rollupConfig!.plugins!.push({
-          name: 'nuxt-font-metrics-transform-nitro',
-          transform (code) {
-            if (code.includes('__INLINED_CSS__')) {
-              return code.replace('__INLINED_CSS__', `\` ${cssContext.value.replace(/\s+/g, ' ')}\``)
-            }
-          }
-        })
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+        config.rollupConfig!.plugins!.push(
+          NitroTransformPlugin({
+            sourcemap: config.sourceMap,
+            cssContext,
+          })
+        )
       })
     }
 
     if (options.inline) {
       addPluginTemplate({
         filename: 'font-override-inlining-plugin.server.ts',
-        getContents: async () => [
-          `const css = \`${(await css).replace(/\s+/g, ' ')}\``,
-          `export default defineNuxtPlugin(() => { useHead({ style: [{ children: css ${!nuxt.options.dev && options.inject ? '+ __INLINED_CSS__ ' : ''}}] }) })`
-        ].join('\n'),
-        mode: 'server'
+        getContents: async () =>
+          [
+            `const css = \`${(await css).replace(/\s+/g, ' ')}\``,
+            `export default defineNuxtPlugin(() => { useHead({ style: [{ children: css ${!nuxt.options.dev && options.inject ? '+ __INLINED_CSS__ ' : ''
+            }}] }) })`,
+          ].join('\n'),
+        mode: 'server',
       })
     } else {
       addTemplate({

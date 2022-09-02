@@ -1,12 +1,17 @@
 import type { Font } from '@capsizecss/unpack'
 import { createRegExp, charIn, charNotIn, exactly, whitespace } from 'magic-regexp'
 
-export const parseFontFace = (css: string): { family?: string, source?: string } => {
+export const parseFontFace = (css: string): { family?: string; source?: string } => {
   const { fontFamily } = css.match(FAMILY_RE)?.groups ?? {}
   const { src } = css.match(SOURCE_RE)?.groups ?? {}
 
   const family = withoutQuotes(fontFamily?.split(',')?.[0] || '')
-  const source = withoutQuotes(src?.split(',').map(source => source.match(URL_RE)?.groups.url).filter(Boolean)?.[0] || '')
+  const source = withoutQuotes(
+    src
+      ?.split(',')
+      .map(source => source.match(URL_RE)?.groups.url)
+      .filter(Boolean)?.[0] || ''
+  )
 
   return { family, source }
 }
@@ -18,7 +23,10 @@ export const generateOverrideName = (name: string) => {
 
 export const withoutQuotes = (str: string) => str.trim().replace(QUOTES_RE, '')
 
-export const generateFontFace = (metrics: Font, options: { name: string, fallbacks: string[], [key: string]: any }) => {
+export const generateFontFace = (
+  metrics: Font,
+  options: { name: string; fallbacks: string[]; [key: string]: any }
+) => {
   const { name, fallbacks, ...properties } = options
 
   // TODO: implement size-adjust: 'width' of web font / 'width' of fallback font
@@ -56,13 +64,7 @@ const FAMILY_RE = createRegExp(
 )
 
 const SOURCE_RE = createRegExp(
-  exactly('src:')
-    .and(whitespace.optionally())
-    .and(charNotIn(';}').times.any().as('src'))
+  exactly('src:').and(whitespace.optionally()).and(charNotIn(';}').times.any().as('src'))
 )
 
-const URL_RE = createRegExp(
-  exactly('url(')
-    .and(charNotIn(')').times.any().as('url'))
-    .and(')')
-)
+const URL_RE = createRegExp(exactly('url(').and(charNotIn(')').times.any().as('url')).and(')'))

@@ -68,9 +68,11 @@ describe('readMetrics', () => {
     `)
   })
   it('reads metrics from a URL', async () => {
-    const server = createServer((request, response) => handler(request, response, {
-      public: dirname(fileURLToPath(fixtureURL))
-    }))
+    const server = createServer((request, response) =>
+      handler(request, response, {
+        public: dirname(fileURLToPath(fixtureURL)),
+      })
+    )
     const port = await getRandomPort()
     server.listen(port)
     const metrics = await readMetrics(`http://localhost:${port}/font.woff2`)

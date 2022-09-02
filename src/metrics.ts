@@ -6,7 +6,7 @@ import { withoutQuotes } from './css'
 
 const metricCache: Record<string, Font | null> = {}
 
-export async function getMetricsForFamily (family?: string) {
+export async function getMetricsForFamily(family?: string) {
   if (!family) return null
   family = withoutQuotes(family)
 
@@ -23,7 +23,7 @@ export async function getMetricsForFamily (family?: string) {
   }
 }
 
-export async function readMetrics (_source: URL | string | Blob) {
+export async function readMetrics(_source: URL | string | Blob) {
   const source = typeof _source !== 'string' && 'href' in _source ? _source.href : _source
 
   if (typeof source !== 'string') {
