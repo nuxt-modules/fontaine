@@ -21,6 +21,11 @@
     ".": {
       "import": "./dist/module.mjs",
       "require": "./dist/module.cjs"
+    },
+    "./transform": {
+      "import": "./dist/transform.mjs",
+      "require": "./dist/transform.cjs",
+      "types": "./dist/transform.d.ts"
     }
   },
   "main": "./dist/module.cjs",

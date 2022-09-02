@@ -52,6 +52,11 @@ export default defineNuxtModule<ModuleOptions>({
     // Skip when preparing
     if (nuxt.options._prepare) return
 
+    // Allow fully overriding default fallbacks
+    if ((nuxt.options as any).fontMetrics?.fallbacks) {
+      options.fallbacks = (nuxt.options as any).fontMetrics?.fallbacks
+    }
+
     const logger = useLogger('nuxt-font-metrics')
 
     const css = (async () => {

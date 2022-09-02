@@ -5,14 +5,15 @@ import { generateFontFace, parseFontFace, generateOverrideName } from './css'
 import { getMetricsForFamily, readMetrics } from './metrics'
 
 interface FontMetricsTransformPluginOptions {
-  css: { value: string }
+  css?: { value?: string }
   fallbacks: string[]
   resolvePath?: (path: string) => string | URL
 }
 
 export const FontMetricsTransformPlugin = createUnplugin(
   (options: FontMetricsTransformPluginOptions) => {
-    options.css.value = ''
+    const cssContext = options.css = options.css || {}
+    cssContext.value = ''
     return {
       name: 'nuxt-font-metrics-transform',
       enforce: 'pre',
@@ -39,7 +40,7 @@ export const FontMetricsTransformPlugin = createUnplugin(
               name: generateOverrideName(family),
               fallbacks: options.fallbacks,
             })
-            options.css.value += fontFace
+            cssContext.value += fontFace
             s.appendLeft(match.index, fontFace)
           }
         }

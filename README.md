@@ -75,6 +75,34 @@ Then, whenever you use `font-family: 'Roboto'`, Nuxt will add the override to th
 }
 ```
 
+## Using outside of Nuxt
+
+The core of this module will work outside of Nuxt.
+
+```js
+import { FontMetricsTransformPlugin } from 'nuxt-font-metrics/transform'
+
+const options = {
+  fallbacks: ['BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans'],
+  // You may need to resolve assets like `/fonts/Roboto.woff2` to a particular directory
+  resolvePath: (id) => 'file:///path/to/public/dir' + id,
+}
+
+// Vite
+export default {
+  plugins: [FontMetricsTransformPlugin.vite(options)]
+}
+
+// Next.js
+export default {
+  webpack(config) {
+    config.plugins = config.plugins || []
+    config.plugins.push(FontMetricsTransformPlugin.webpack(options))
+    return config
+  },
+}
+```
+
 ## 💻 Development
 
 - Clone this repository
