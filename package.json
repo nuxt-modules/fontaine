@@ -60,7 +60,7 @@
     "@nuxt/kit": "3.0.0-rc.9",
     "magic-regexp": "^0.4.1",
     "magic-string": "^0.26.3",
-    "pathe": "^0.3.5",
+    "pathe": "^0.3.7",
     "scule": "^0.3.2",
     "ufo": "^0.8.5",
     "unplugin": "^0.9.5"
@@ -78,7 +78,7 @@
     "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "expect-type": "^0.13.0",
+    "expect-type": "^0.14.0",
     "get-port-please": "^2.6.1",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
