@@ -31,22 +31,24 @@ For best performance, you will need to inline _all_ your CSS, not just the font-
 
 [This PR](https://github.com/nuxt/framework/pull/7160) aims to bring that ability to Nuxt itself.
 
-
 ## Installation
 
 With `pnpm`
+
 ```bash
-  pnpm add -D nuxt-font-metrics
+pnpm add -D nuxt-font-metrics
 ```
 
 Or, with `npm`
+
 ```bash
-  npm install -D nuxt-font-metrics
+npm install -D nuxt-font-metrics
 ```
 
 Or, with `yarn`
+
 ```bash
-  yarn add -D nuxt-font-metrics
+yarn add -D nuxt-font-metrics
 ```
 
 ## Usage
