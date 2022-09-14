@@ -57,7 +57,7 @@
   "dependencies": {
     "@capsizecss/metrics": "^0.3.0",
     "@capsizecss/unpack": "^0.1.0",
-    "@nuxt/kit": "3.0.0-rc.9",
+    "@nuxt/kit": "3.0.0-rc.10",
     "magic-regexp": "^0.4.1",
     "magic-string": "^0.26.3",
     "pathe": "^0.3.7",
@@ -68,7 +68,7 @@
   "devDependencies": {
     "@nuxt/module-builder": "^0.1.7",
     "@nuxt/schema": "npm:@nuxt/schema-edge@3.0.0-rc.9-27703329.537338f",
-    "@nuxt/test-utils": "3.0.0-rc.9",
+    "@nuxt/test-utils": "3.0.0-rc.10",
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
     "@release-it/conventional-changelog": "^5.1.0",
     "@types/node": "^18.7.14",
