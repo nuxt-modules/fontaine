@@ -99,7 +99,7 @@ export default defineNuxtModule<ModuleOptions>({
         fallbacks: options.fallbacks,
         resolvePath,
         css: cssContext,
-        sourcemap: nuxt.options.sourcemap,
+        sourcemap: typeof nuxt.options.sourcemap === 'boolean' ? nuxt.options.sourcemap : nuxt.options.sourcemap?.client || nuxt.options.sourcemap?.server,
       }
       addVitePlugin(FontMetricsTransformPlugin.vite(transformOptions), { server: false })
       addWebpackPlugin(FontMetricsTransformPlugin.webpack(transformOptions), { server: false })
