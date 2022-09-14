@@ -67,7 +67,7 @@
   },
   "devDependencies": {
     "@nuxt/module-builder": "^0.1.7",
-    "@nuxt/schema": "npm:@nuxt/schema-edge@3.0.0-rc.9-27703329.537338f",
+    "@nuxt/schema": "npm:@nuxt/schema-edge@3.0.0-rc.11-27719556.94377b1",
     "@nuxt/test-utils": "3.0.0-rc.10",
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
     "@release-it/conventional-changelog": "^5.1.0",
@@ -82,7 +82,7 @@
     "get-port-please": "^2.6.1",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "nuxt": "npm:nuxt3@3.0.0-rc.9-27703329.537338f",
+    "nuxt": "npm:nuxt3@3.0.0-rc.11-27719556.94377b1",
     "pinst": "^3.0.0",
     "prettier": "^2.7.1",
     "release-it": "^15.4.1",
