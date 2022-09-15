@@ -32,7 +32,7 @@ importers:
       pathe: ^0.3.7
       pinst: ^3.0.0
       prettier: ^2.7.1
-      release-it: ^15.4.1
+      release-it: ^15.4.2
       scule: ^0.3.2
       serve-handler: ^6.1.3
       typescript: ^4.8.3
@@ -55,7 +55,7 @@ importers:
       '@nuxt/schema': /@nuxt/schema-edge/3.0.0-rc.11-27720480.3ed63a6
       '@nuxt/test-utils': 3.0.0-rc.10_vue@3.2.39
       '@nuxtjs/eslint-config-typescript': 11.0.0_irgkl5vooow2ydyo6aokmferha
-      '@release-it/conventional-changelog': 5.1.0_release-it@15.4.1
+      '@release-it/conventional-changelog': 5.1.0_release-it@15.4.2
       '@types/node': 18.7.14
       '@vitest/coverage-c8': 0.23.2
       c8: 7.12.0
@@ -70,7 +70,7 @@ importers:
       nuxt: /nuxt3/3.0.0-rc.11-27720480.3ed63a6_irgkl5vooow2ydyo6aokmferha
       pinst: 3.0.0
       prettier: 2.7.1
-      release-it: 15.4.1
+      release-it: 15.4.2
       serve-handler: 6.1.3
       typescript: 4.8.3
       vitest: 0.23.2
@@ -1130,7 +1130,7 @@ packages:
       config-chain: 1.1.13
     dev: true
 
-  /@release-it/conventional-changelog/5.1.0_release-it@15.4.1:
+  /@release-it/conventional-changelog/5.1.0_release-it@15.4.2:
     resolution: {integrity: sha512-o55D822tVIoldUDj1Fp1KvenVREcEEjYOyuVNwRVnTcExFN6nWUPrH05q7Y8opT23N5snuCwPJ5bzLPEcpBvRg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1139,7 +1139,7 @@ packages:
       concat-stream: 2.0.0
       conventional-changelog: 3.1.25
       conventional-recommended-bump: 6.1.0
-      release-it: 15.4.1
+      release-it: 15.4.2
       semver: 7.3.7
     dev: true
 
@@ -4225,14 +4225,6 @@ packages:
       web-streams-polyfill: 3.2.1
     dev: true
 
-  /figures/4.0.1:
-    resolution: {integrity: sha512-rElJwkA/xS04Vfg+CaZodpso7VqBknOYbzi6I76hI4X80RUjkSxO2oAyPmGbuXUppywjqndOrQDl817hDnI++w==}
-    engines: {node: '>=12'}
-    dependencies:
-      escape-string-regexp: 5.0.0
-      is-unicode-supported: 1.2.0
-    dev: true
-
   /figures/5.0.0:
     resolution: {integrity: sha512-ej8ksPF4x6e5wvK9yevct0UCXh8TTFlWGVLlgjZuoBH1HwjIfKE/IdL5mq89sFA7zELi1VhKpmtDnrs7zWyeyg==}
     engines: {node: '>=14'}
@@ -4340,8 +4332,8 @@ packages:
       signal-exit: 3.0.7
     dev: true
 
-  /form-data-encoder/2.0.1:
-    resolution: {integrity: sha512-Oy+P9w5mnO4TWXVgUiQvggNKPI9/ummcSt5usuIV6HkaLKigwzPpoenhEqmGmx3zHqm6ZLJ+CR/99N8JLinaEw==}
+  /form-data-encoder/2.1.2:
+    resolution: {integrity: sha512-FCaIOVTRA9E0siY6FeXid7D5yrCqpsErplUkE2a1BEiKj1BE9z6FbKB4ntDTwC4NVLie9p+4E9nX4mWwEOT05A==}
     engines: {node: '>= 14.17'}
     dev: true
 
@@ -4667,23 +4659,22 @@ packages:
     resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
     dev: true
 
-  /got/12.3.1:
-    resolution: {integrity: sha512-tS6+JMhBh4iXMSXF6KkIsRxmloPln31QHDlcb6Ec3bzxjjFJFr/8aXdpyuLmVc9I4i2HyBHYw1QU5K1ruUdpkw==}
+  /got/12.4.1:
+    resolution: {integrity: sha512-Sz1ojLt4zGNkcftIyJKnulZT/yEDvifhUjccHA8QzOuTgPs/+njXYNMFE3jR4/2OODQSSbH8SdnoLCkbh41ieA==}
     engines: {node: '>=14.16'}
     dependencies:
       '@sindresorhus/is': 5.3.0
       '@szmarczak/http-timer': 5.0.1
       '@types/cacheable-request': 6.0.2
-      '@types/responselike': 1.0.0
       cacheable-lookup: 6.1.0
       cacheable-request: 7.0.2
       decompress-response: 6.0.0
-      form-data-encoder: 2.0.1
+      form-data-encoder: 2.1.2
       get-stream: 6.0.1
       http2-wrapper: 2.1.11
       lowercase-keys: 3.0.0
       p-cancelable: 3.0.0
-      responselike: 2.0.1
+      responselike: 3.0.0
     dev: true
 
   /graceful-fs/4.2.10:
@@ -4927,27 +4918,6 @@ packages:
   /ini/2.0.0:
     resolution: {integrity: sha512-7PnF4oN3CvZF23ADhA5wRaYEQpJ8qygSkbtTXWBeXWXmEVRXK+1ITciHWwHhsjv1TmW0MgacIv6hEi5pX5NQdA==}
     engines: {node: '>=10'}
-    dev: true
-
-  /inquirer/9.1.0:
-    resolution: {integrity: sha512-eukdjrBljg9t55ZnvJjvGi1OyYEzVBFsO/8o5d2MV3mc28u3x4X2kS4eJ/+9U10KiREfPkEBSeCrU/S2G/uRtw==}
-    engines: {node: '>=12.0.0'}
-    dependencies:
-      ansi-escapes: 5.0.0
-      chalk: 5.0.1
-      cli-cursor: 4.0.0
-      cli-width: 4.0.0
-      external-editor: 3.1.0
-      figures: 4.0.1
-      lodash: 4.17.21
-      mute-stream: 0.0.8
-      ora: 6.1.2
-      run-async: 2.4.1
-      rxjs: 7.5.6
-      string-width: 5.1.2
-      strip-ansi: 7.0.1
-      through: 2.3.8
-      wrap-ansi: 8.0.1
     dev: true
 
   /inquirer/9.1.1:
@@ -6643,7 +6613,7 @@ packages:
     resolution: {integrity: sha512-hySwcV8RAWeAfPsXb9/HGSPn8lwDnv6fabH+obUZKX169QknRkRhPxd1yMubpKDskLFATkl3jHpNtVtDPFA0Wg==}
     engines: {node: '>=14.16'}
     dependencies:
-      got: 12.3.1
+      got: 12.4.1
       registry-auth-token: 5.0.1
       registry-url: 6.0.1
       semver: 7.3.7
@@ -7449,8 +7419,8 @@ packages:
       rc: 1.2.8
     dev: true
 
-  /release-it/15.4.1:
-    resolution: {integrity: sha512-w6adXfE+bN/fdcG1KehgS7gYcTfZLYIPml4jPOUEtYQ6NJyaiCtCF/ks032w1jf6EUgvGgWruRP+2TyyyDDBgA==}
+  /release-it/15.4.2:
+    resolution: {integrity: sha512-8UszvMbV/+aNZ03TRIpPiKOyO7s6fWkSHZ0Bz08qUBpO8F+o2j6o4+TEygPygJznW8UcfO1SDldagqBMIfOh5Q==}
     engines: {node: '>=14.9'}
     hasBin: true
     dependencies:
@@ -7463,8 +7433,8 @@ packages:
       form-data: 4.0.0
       git-url-parse: 13.0.0
       globby: 13.1.2
-      got: 12.3.1
-      inquirer: 9.1.0
+      got: 12.4.1
+      inquirer: 9.1.1
       is-ci: 3.0.1
       lodash: 4.17.21
       mime-types: 2.1.35
@@ -7522,6 +7492,13 @@ packages:
     resolution: {integrity: sha512-4gl03wn3hj1HP3yzgdI7d3lCkF95F21Pz4BPGvKHinyQzALR5CapwC8yIi0Rh58DEMQ/SguC03wFj2k0M/mHhw==}
     dependencies:
       lowercase-keys: 2.0.0
+    dev: true
+
+  /responselike/3.0.0:
+    resolution: {integrity: sha512-40yHxbNcl2+rzXvZuVkrYohathsSJlMTXKryG5y8uciHv1+xDLHQpgjG64JUO9nrEq2jGLH6IZ8BcZyw3wrweg==}
+    engines: {node: '>=14.16'}
+    dependencies:
+      lowercase-keys: 3.0.0
     dev: true
 
   /restore-cursor/3.1.0:
