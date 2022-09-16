@@ -26,7 +26,7 @@ importers:
       get-port-please: ^2.6.1
       husky: ^8.0.1
       lint-staged: ^13.0.3
-      magic-regexp: ^0.4.1
+      magic-regexp: ^0.5.0
       magic-string: ^0.26.3
       nuxt: npm:nuxt3@3.0.0-rc.11-27720979.b933015
       pathe: ^0.3.7
@@ -44,7 +44,7 @@ importers:
       '@capsizecss/metrics': 0.3.0
       '@capsizecss/unpack': 0.1.0
       '@nuxt/kit': 3.0.0-rc.10
-      magic-regexp: 0.4.1
+      magic-regexp: 0.5.0
       magic-string: 0.26.3
       pathe: 0.3.7
       scule: 0.3.2
@@ -5655,14 +5655,14 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dev: true
 
-  /magic-regexp/0.4.1:
-    resolution: {integrity: sha512-JNwUo8+mV7yYUz3z6YDac4qhKMKVYOiEMU1DkW+EwG+BADaXCZpdh0wNFk1+7B2wrMGF4V6jrARWBitFZW2gGw==}
+  /magic-regexp/0.5.0:
+    resolution: {integrity: sha512-zP6wG5tnDX2FYgnFco4KEG+Qg2ujBIgO1VP+d6ScabRndZAyvR34PdwmRPnDqXiXLCReNXH406NyKyXgrWqTqQ==}
     dependencies:
       estree-walker: 3.0.1
       magic-string: 0.26.3
       mlly: 0.5.14
       ufo: 0.8.5
-      unplugin: 0.8.1
+      unplugin: 0.9.5
     transitivePeerDependencies:
       - esbuild
       - rollup
@@ -8537,29 +8537,6 @@ packages:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
     dev: true
-
-  /unplugin/0.8.1:
-    resolution: {integrity: sha512-o7rUZoPLG1fH4LKinWgb77gDtTE6mw/iry0Pq0Z5UPvZ9+HZ1/4+7fic7t58s8/CGkPrDpGq+RltO+DmswcR4g==}
-    peerDependencies:
-      esbuild: '>=0.13'
-      rollup: ^2.50.0
-      vite: ^2.3.0 || ^3.0.0-0
-      webpack: 4 || 5
-    peerDependenciesMeta:
-      esbuild:
-        optional: true
-      rollup:
-        optional: true
-      vite:
-        optional: true
-      webpack:
-        optional: true
-    dependencies:
-      acorn: 8.8.0
-      chokidar: 3.5.3
-      webpack-sources: 3.2.3
-      webpack-virtual-modules: 0.4.4
-    dev: false
 
   /unplugin/0.9.5:
     resolution: {integrity: sha512-luraheyfxwtvkvHpsOvMNv7IjLdORTWKZp0gWYNHGLi2ImON3iIZOj464qEyyEwLA/EMt12fC415HW9zRpOfTg==}
