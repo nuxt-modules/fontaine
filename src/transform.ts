@@ -26,11 +26,12 @@ export const FontMetricsTransformPlugin = createUnplugin(
         const faceRanges: [start: number, end: number][] = []
 
         for (const match of code.matchAll(FONT_FACE_RE)) {
-          if (match.index === undefined) continue
+          const matchContent = match[0]
+          if (match.index === undefined || !matchContent) continue
 
-          faceRanges.push([match.index, match.index + match[0].length])
+          faceRanges.push([match.index, match.index + matchContent.length])
 
-          const { family, source } = parseFontFace(match[0])
+          const { family, source } = parseFontFace(matchContent)
           if (!family) continue
 
           const metrics =
@@ -52,16 +53,16 @@ export const FontMetricsTransformPlugin = createUnplugin(
         }
 
         for (const match of code.matchAll(FONT_FAMILY_RE)) {
-          const { index } = match
-          if (index === undefined) continue
+          const { index, 0: matchContent } = match
+          if (index === undefined || !matchContent) continue
 
           // Skip font-family definitions _within_ @font-face blocks
           if (faceRanges.some(([start, end]) => index > start && index < end)) continue
-          const families = match[0].split(',').map(f => f.trim())
+          const families = matchContent.split(',').map(f => f.trim())
 
           s.overwrite(
             index,
-            index + match[0].length,
+            index + matchContent.length,
             ' ' +
               [families[0], `"${generateOverrideName(families[0])}"`, ...families.slice(1)].join(
                 ', '
