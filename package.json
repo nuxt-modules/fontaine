@@ -59,11 +59,11 @@
     "@capsizecss/unpack": "^0.1.0",
     "@nuxt/kit": "3.0.0-rc.11",
     "magic-regexp": "^0.5.0",
-    "magic-string": "^0.26.3",
+    "magic-string": "^0.26.4",
     "pathe": "^0.3.8",
     "scule": "^0.3.2",
     "ufo": "^0.8.5",
-    "unplugin": "^0.9.5"
+    "unplugin": "^0.9.6"
   },
   "devDependencies": {
     "@nuxt/module-builder": "^0.1.7",
@@ -94,7 +94,7 @@
   "resolutions": {
     "nuxt-font-metrics": "link:."
   },
-  "packageManager": "pnpm@7.12.1",
+  "packageManager": "pnpm@7.12.2",
   "volta": {
     "node": "16.17.0"
   }
