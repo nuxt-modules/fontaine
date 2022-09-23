@@ -16,6 +16,7 @@ importers:
       '@nuxtjs/eslint-config-typescript': ^11.0.0
       '@release-it/conventional-changelog': ^5.1.0
       '@types/node': ^18.7.14
+      '@types/serve-handler': ^6.1.1
       '@vitest/coverage-c8': ^0.23.4
       c8: ^7.12.0
       conventional-changelog-conventionalcommits: ^5.0.0
@@ -57,6 +58,7 @@ importers:
       '@nuxtjs/eslint-config-typescript': 11.0.0_irgkl5vooow2ydyo6aokmferha
       '@release-it/conventional-changelog': 5.1.0_release-it@15.4.2
       '@types/node': 18.7.14
+      '@types/serve-handler': 6.1.1
       '@vitest/coverage-c8': 0.23.4
       c8: 7.12.0
       conventional-changelog-conventionalcommits: 5.0.0
@@ -1298,6 +1300,12 @@ packages:
 
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
+    dependencies:
+      '@types/node': 18.7.14
+    dev: true
+
+  /@types/serve-handler/6.1.1:
+    resolution: {integrity: sha512-bIwSmD+OV8w0t2e7EWsuQYlGoS1o5aEdVktgkXaa43Zm0qVWi21xaSRb3DQA1UXD+DJ5bRq1Rgu14ZczB+CjIQ==}
     dependencies:
       '@types/node': 18.7.14
     dev: true
@@ -3051,7 +3059,7 @@ packages:
     dev: true
 
   /ee-first/1.1.1:
-    resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
+    resolution: {integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=}
     dev: true
 
   /electron-to-chromium/1.4.258:
