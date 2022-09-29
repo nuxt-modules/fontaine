@@ -105,31 +105,7 @@ Then, whenever you use `font-family: 'Roboto'`, Nuxt will add the override to th
 
 ## Using outside of Nuxt
 
-The core of this module will work outside of Nuxt.
-
-```js
-import { FontMetricsTransformPlugin } from 'nuxt-font-metrics/transform'
-
-const options = {
-  fallbacks: ['BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans'],
-  // You may need to resolve assets like `/fonts/Roboto.woff2` to a particular directory
-  resolvePath: (id) => 'file:///path/to/public/dir' + id,
-}
-
-// Vite
-export default {
-  plugins: [FontMetricsTransformPlugin.vite(options)]
-}
-
-// Next.js
-export default {
-  webpack(config) {
-    config.plugins = config.plugins || []
-    config.plugins.push(FontMetricsTransformPlugin.webpack(options))
-    return config
-  },
-}
-```
+The core of this module will work outside of Nuxt, and has been separated into a separate library: [`fontaine`](https://github.com/danielroe/fontaine/). Check it out!
 
 ## 💻 Development
 
@@ -144,7 +120,7 @@ export default {
 This would not have been possible without:
 
 - amazing tooling and generated metrics from [capsizecss](https://seek-oss.github.io/capsize/)
-- suggestion and algorithm from [Katie Hempenius](https://katiehempenius.com/) & [Kara Erickson](https://github.com/kara) on the Google Aurora team - see  [notes on calculating font metric overrides](https://docs.google.com/document/d/e/2PACX-1vRsazeNirATC7lIj2aErSHpK26hZ6dA9GsQ069GEbq5fyzXEhXbvByoftSfhG82aJXmrQ_sJCPBqcx_/pub).
+- suggestion and algorithm from [Katie Hempenius](https://katiehempenius.com/) & [Kara Erickson](https://github.com/kara) on the Google Aurora team - see [notes on calculating font metric overrides](https://docs.google.com/document/d/e/2PACX-1vRsazeNirATC7lIj2aErSHpK26hZ6dA9GsQ069GEbq5fyzXEhXbvByoftSfhG82aJXmrQ_sJCPBqcx_/pub).
 
 ## License
 

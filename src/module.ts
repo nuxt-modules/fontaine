@@ -11,10 +11,8 @@ import {
 } from '@nuxt/kit'
 import { join } from 'pathe'
 import { hasProtocol } from 'ufo'
-import { generateFontFace, generateOverrideName } from './css'
-import { getMetricsForFamily, readMetrics } from './metrics'
 import { NitroTransformPlugin } from './nitro-plugin'
-import { FontMetricsTransformPlugin } from './transform'
+import { FontaineTransform, generateFontFace, generateOverrideName, getMetricsForFamily, readMetrics } from 'fontaine'
 
 interface CustomFont {
   /** The font family name. This will be used to generate the override name and also to load cached metrics, if possible. */
@@ -101,8 +99,8 @@ export default defineNuxtModule<ModuleOptions>({
         css: cssContext,
         sourcemap: typeof nuxt.options.sourcemap === 'boolean' ? nuxt.options.sourcemap : nuxt.options.sourcemap?.client || nuxt.options.sourcemap?.server,
       }
-      addVitePlugin(FontMetricsTransformPlugin.vite(transformOptions), { server: false })
-      addWebpackPlugin(FontMetricsTransformPlugin.webpack(transformOptions), { server: false })
+      addVitePlugin(FontaineTransform.vite(transformOptions), { server: false })
+      addWebpackPlugin(FontaineTransform.webpack(transformOptions), { server: false })
       nuxt.hook('nitro:config', config => {
         // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         config.rollupConfig!.plugins!.push(
