@@ -26,7 +26,7 @@ importers:
       get-port-please: ^2.6.1
       husky: ^8.0.1
       lint-staged: ^13.0.3
-      magic-string: ^0.26.4
+      magic-string: ^0.26.5
       nuxt: npm:nuxt3@3.0.0-rc.12-27736489.2e080c2
       pathe: ^0.3.8
       pinst: ^3.0.0
@@ -40,7 +40,7 @@ importers:
     dependencies:
       '@nuxt/kit': 3.0.0-rc.11
       fontaine: 0.1.1
-      magic-string: 0.26.4
+      magic-string: 0.26.5
       pathe: 0.3.8
       ufo: 0.8.5
     devDependencies:
@@ -729,7 +729,7 @@ packages:
       get-port-please: 2.6.1
       h3: 0.7.21
       knitwork: 0.1.2
-      magic-string: 0.26.4
+      magic-string: 0.26.5
       mlly: 0.5.16
       ohash: 0.1.5
       pathe: 0.3.8
@@ -781,7 +781,7 @@ packages:
       get-port-please: 2.6.1
       h3: 0.7.21
       knitwork: 0.1.2
-      magic-string: 0.26.4
+      magic-string: 0.26.5
       mlly: 0.5.16
       ohash: 0.1.5
       pathe: 0.3.8
@@ -2365,7 +2365,7 @@ packages:
     dev: true
 
   /concat-map/0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: true
 
   /concat-stream/2.0.0:
@@ -3028,7 +3028,7 @@ packages:
     dev: true
 
   /ee-first/1.1.1:
-    resolution: {integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=}
+    resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: true
 
   /electron-to-chromium/1.4.258:
@@ -4181,7 +4181,7 @@ packages:
       '@capsizecss/metrics': 0.3.0
       '@capsizecss/unpack': 0.1.0
       magic-regexp: 0.5.0
-      magic-string: 0.26.4
+      magic-string: 0.26.5
       pathe: 0.3.8
       scule: 0.3.2
       ufo: 0.8.5
@@ -5563,7 +5563,7 @@ packages:
     resolution: {integrity: sha512-zP6wG5tnDX2FYgnFco4KEG+Qg2ujBIgO1VP+d6ScabRndZAyvR34PdwmRPnDqXiXLCReNXH406NyKyXgrWqTqQ==}
     dependencies:
       estree-walker: 3.0.1
-      magic-string: 0.26.4
+      magic-string: 0.26.5
       mlly: 0.5.16
       ufo: 0.8.5
       unplugin: 0.9.6
@@ -5575,8 +5575,8 @@ packages:
       sourcemap-codec: 1.4.8
     dev: true
 
-  /magic-string/0.26.4:
-    resolution: {integrity: sha512-e5uXtVJ22aEpK9u1+eQf0fSxHeqwyV19K+uGnlROCxUhzwRip9tBsaMViK/0vC3viyPd5Gtucp3UmEp/Q2cPTQ==}
+  /magic-string/0.26.5:
+    resolution: {integrity: sha512-yXUIYOOQnEHKHOftp5shMWpB9ImfgfDJpapa38j/qMtTj5QHWucvxP4lUtuRmHT9vAzvtpHkWKXW9xBwimXeNg==}
     engines: {node: '>=12'}
     dependencies:
       sourcemap-codec: 1.4.8
@@ -6170,7 +6170,7 @@ packages:
       hash-sum: 2.0.0
       hookable: 5.3.0
       knitwork: 0.1.2
-      magic-string: 0.26.4
+      magic-string: 0.26.5
       mlly: 0.5.16
       nitropack: 0.5.4
       nuxi: 3.0.0-rc.11
@@ -6232,7 +6232,7 @@ packages:
       hash-sum: 2.0.0
       hookable: 5.3.0
       knitwork: 0.1.2
-      magic-string: 0.26.4
+      magic-string: 0.26.5
       mlly: 0.5.16
       nitropack: /nitropack-edge/0.5.4-27726613.640c2b7
       nuxi: /nuxi-edge/3.0.0-rc.12-27736489.2e080c2
@@ -7437,7 +7437,7 @@ packages:
       rollup: ^2.55
       typescript: ^4.1
     dependencies:
-      magic-string: 0.26.4
+      magic-string: 0.26.5
       rollup: 2.79.1
       typescript: 4.8.4
     optionalDependencies:
@@ -8283,7 +8283,7 @@ packages:
     dependencies:
       acorn: 8.8.0
       estree-walker: 3.0.1
-      magic-string: 0.26.4
+      magic-string: 0.26.5
       unplugin: 0.9.6
 
   /undici/5.10.0:
@@ -8321,7 +8321,7 @@ packages:
       escape-string-regexp: 5.0.0
       fast-glob: 3.2.11
       local-pkg: 0.4.2
-      magic-string: 0.26.4
+      magic-string: 0.26.5
       mlly: 0.5.16
       pathe: 0.3.8
       scule: 0.3.2
