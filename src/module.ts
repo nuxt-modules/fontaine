@@ -12,7 +12,13 @@ import {
 import { join } from 'pathe'
 import { hasProtocol } from 'ufo'
 import { NitroTransformPlugin } from './nitro-plugin'
-import { FontaineTransform, generateFontFace, generateOverrideName, getMetricsForFamily, readMetrics } from 'fontaine'
+import {
+  FontaineTransform,
+  generateFontFace,
+  generateOverrideName,
+  getMetricsForFamily,
+  readMetrics,
+} from 'fontaine'
 
 interface CustomFont {
   /** The font family name. This will be used to generate the override name and also to load cached metrics, if possible. */
@@ -47,7 +53,7 @@ export default defineNuxtModule<ModuleOptions>({
     fallbacks: ['BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans'],
     fonts: [],
   }),
-  async setup (options, nuxt) {
+  async setup(options, nuxt) {
     // Skip when preparing
     if (nuxt.options._prepare) return
 
@@ -97,7 +103,10 @@ export default defineNuxtModule<ModuleOptions>({
         fallbacks: options.fallbacks,
         resolvePath,
         css: cssContext,
-        sourcemap: typeof nuxt.options.sourcemap === 'boolean' ? nuxt.options.sourcemap : nuxt.options.sourcemap?.client || nuxt.options.sourcemap?.server,
+        sourcemap:
+          typeof nuxt.options.sourcemap === 'boolean'
+            ? nuxt.options.sourcemap
+            : nuxt.options.sourcemap?.client || nuxt.options.sourcemap?.server,
       }
       addVitePlugin(FontaineTransform.vite(transformOptions), { server: false })
       addWebpackPlugin(FontaineTransform.webpack(transformOptions), { server: false })
@@ -118,7 +127,8 @@ export default defineNuxtModule<ModuleOptions>({
         getContents: async () =>
           [
             `const css = \`${(await css).replace(/\s+/g, ' ')}\``,
-            `export default defineNuxtPlugin(() => { useHead({ style: [{ children: css ${!nuxt.options.dev && options.inject ? '+ __INLINED_CSS__ ' : ''
+            `export default defineNuxtPlugin(() => { useHead({ style: [{ children: css ${
+              !nuxt.options.dev && options.inject ? '+ __INLINED_CSS__ ' : ''
             }}] }) })`,
           ].join('\n'),
         mode: 'server',
