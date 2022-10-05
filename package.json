@@ -57,7 +57,7 @@
   "dependencies": {
     "@nuxt/kit": "3.0.0-rc.11",
     "fontaine": "^0.1.1",
-    "magic-string": "^0.26.5",
+    "magic-string": "^0.26.6",
     "pathe": "^0.3.8",
     "ufo": "^0.8.5"
   },
@@ -91,7 +91,7 @@
   "resolutions": {
     "nuxt-font-metrics": "link:."
   },
-  "packageManager": "pnpm@7.13.1",
+  "packageManager": "pnpm@7.13.2",
   "volta": {
     "node": "16.17.1"
   }

@@ -26,7 +26,7 @@ importers:
       get-port-please: ^2.6.1
       husky: ^8.0.1
       lint-staged: ^13.0.3
-      magic-string: ^0.26.5
+      magic-string: ^0.26.6
       nuxt: npm:nuxt3@3.0.0-rc.12-27746784.92ff066
       pathe: ^0.3.8
       pinst: ^3.0.0
@@ -40,7 +40,7 @@ importers:
     dependencies:
       '@nuxt/kit': 3.0.0-rc.11
       fontaine: 0.1.1
-      magic-string: 0.26.5
+      magic-string: 0.26.6
       pathe: 0.3.8
       ufo: 0.8.5
     devDependencies:
@@ -729,7 +729,7 @@ packages:
       get-port-please: 2.6.1
       h3: 0.7.21
       knitwork: 0.1.2
-      magic-string: 0.26.5
+      magic-string: 0.26.6
       mlly: 0.5.16
       ohash: 0.1.5
       pathe: 0.3.8
@@ -781,7 +781,7 @@ packages:
       get-port-please: 2.6.1
       h3: 0.7.21
       knitwork: 0.1.2
-      magic-string: 0.26.5
+      magic-string: 0.26.6
       mlly: 0.5.16
       ohash: 0.1.5
       pathe: 0.3.8
@@ -4142,7 +4142,7 @@ packages:
       '@capsizecss/metrics': 0.3.0
       '@capsizecss/unpack': 0.1.0
       magic-regexp: 0.5.0
-      magic-string: 0.26.5
+      magic-string: 0.26.6
       pathe: 0.3.8
       scule: 0.3.2
       ufo: 0.8.5
@@ -5510,7 +5510,7 @@ packages:
     resolution: {integrity: sha512-zP6wG5tnDX2FYgnFco4KEG+Qg2ujBIgO1VP+d6ScabRndZAyvR34PdwmRPnDqXiXLCReNXH406NyKyXgrWqTqQ==}
     dependencies:
       estree-walker: 3.0.1
-      magic-string: 0.26.5
+      magic-string: 0.26.6
       mlly: 0.5.16
       ufo: 0.8.5
       unplugin: 0.9.6
@@ -5522,8 +5522,8 @@ packages:
       sourcemap-codec: 1.4.8
     dev: true
 
-  /magic-string/0.26.5:
-    resolution: {integrity: sha512-yXUIYOOQnEHKHOftp5shMWpB9ImfgfDJpapa38j/qMtTj5QHWucvxP4lUtuRmHT9vAzvtpHkWKXW9xBwimXeNg==}
+  /magic-string/0.26.6:
+    resolution: {integrity: sha512-6d+3bFybzyQFJYSoRsl9ZC0wheze8M1LrQC7tNMRqXR4izUTDOLMd9BtSuExK9iAukFh+s5K0WAhc/dlQ+HKYA==}
     engines: {node: '>=12'}
     dependencies:
       sourcemap-codec: 1.4.8
@@ -6122,7 +6122,7 @@ packages:
       hash-sum: 2.0.0
       hookable: 5.3.0
       knitwork: 0.1.2
-      magic-string: 0.26.5
+      magic-string: 0.26.6
       mlly: 0.5.16
       nitropack: 0.5.4
       nuxi: 3.0.0-rc.11
@@ -6184,7 +6184,7 @@ packages:
       hash-sum: 2.0.0
       hookable: 5.3.0
       knitwork: 0.1.2
-      magic-string: 0.26.5
+      magic-string: 0.26.6
       mlly: 0.5.16
       nitropack: /nitropack-edge/0.5.4-27726613.640c2b7
       nuxi: /nuxi-edge/3.0.0-rc.12-27746784.92ff066
@@ -7376,7 +7376,7 @@ packages:
       rollup: ^2.55
       typescript: ^4.1
     dependencies:
-      magic-string: 0.26.5
+      magic-string: 0.26.6
       rollup: 2.79.1
       typescript: 4.8.4
     optionalDependencies:
@@ -8222,7 +8222,7 @@ packages:
     dependencies:
       acorn: 8.8.0
       estree-walker: 3.0.1
-      magic-string: 0.26.5
+      magic-string: 0.26.6
       unplugin: 0.9.6
 
   /undici/5.10.0:
@@ -8260,7 +8260,7 @@ packages:
       escape-string-regexp: 5.0.0
       fast-glob: 3.2.11
       local-pkg: 0.4.2
-      magic-string: 0.26.5
+      magic-string: 0.26.6
       mlly: 0.5.16
       pathe: 0.3.8
       scule: 0.3.2
