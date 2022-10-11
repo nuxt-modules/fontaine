@@ -15,7 +15,7 @@ importers:
       '@release-it/conventional-changelog': ^5.1.1
       '@types/node': ^18.7.14
       '@types/serve-handler': ^6.1.1
-      '@vitest/coverage-c8': ^0.24.0
+      '@vitest/coverage-c8': ^0.24.1
       c8: ^7.12.0
       conventional-changelog-conventionalcommits: ^5.0.0
       eslint: ^8.25.0
@@ -26,7 +26,7 @@ importers:
       get-port-please: ^2.6.1
       husky: ^8.0.1
       lint-staged: ^13.0.3
-      magic-string: ^0.26.6
+      magic-string: ^0.26.7
       nuxt: npm:nuxt3@3.0.0-rc.12-27757773.ed1c704
       pathe: ^0.3.9
       pinst: ^3.0.0
@@ -35,12 +35,12 @@ importers:
       serve-handler: ^6.1.3
       typescript: ^4.8.4
       ufo: ^0.8.5
-      vitest: ^0.24.0
+      vitest: ^0.24.1
       vue: ^3.2.40
     dependencies:
       '@nuxt/kit': 3.0.0-rc.11
       fontaine: 0.1.1
-      magic-string: 0.26.6
+      magic-string: 0.26.7
       pathe: 0.3.9
       ufo: 0.8.5
     devDependencies:
@@ -51,7 +51,7 @@ importers:
       '@release-it/conventional-changelog': 5.1.1_release-it@15.5.0
       '@types/node': 18.7.14
       '@types/serve-handler': 6.1.1
-      '@vitest/coverage-c8': 0.24.0
+      '@vitest/coverage-c8': 0.24.1
       c8: 7.12.0
       conventional-changelog-conventionalcommits: 5.0.0
       eslint: 8.25.0
@@ -67,16 +67,16 @@ importers:
       release-it: 15.5.0
       serve-handler: 6.1.3
       typescript: 4.8.4
-      vitest: 0.24.0
+      vitest: 0.24.1
       vue: 3.2.40
 
   playground:
     specifiers:
       nuxt: ^3.0.0-rc.11
-      nuxt-font-metrics: link:.
+      nuxt-font-metrics: link:..
     devDependencies:
       nuxt: 3.0.0-rc.11
-      nuxt-font-metrics: 'link:'
+      nuxt-font-metrics: link:..
 
 packages:
 
@@ -1460,11 +1460,11 @@ packages:
       vue: 3.2.40
     dev: true
 
-  /@vitest/coverage-c8/0.24.0:
-    resolution: {integrity: sha512-Ho5256BOrLnsJgEgE368ED17cr8rOAXrxvwpZ+XZUA4yAcMBxGAX08cCeG4dibmNVD2NE9Hcpd2foMZsTge3wA==}
+  /@vitest/coverage-c8/0.24.1:
+    resolution: {integrity: sha512-cOFHXRHB9WHtGgsHE4FX4Ef1c9Hon668RNJQOJvqSy1/1Y7zIYIBhFWmuFKLZRCMV4jGT5CRiuB9KtdNsOc3og==}
     dependencies:
       c8: 7.12.0
-      vitest: 0.24.0
+      vitest: 0.24.1
     transitivePeerDependencies:
       - '@edge-runtime/vm'
       - '@vitest/browser'
@@ -2038,7 +2038,7 @@ packages:
     resolution: {integrity: sha512-wJL0/knDbqM/3moLb+8Xd+w3JdkggkIIhiNBkxZ1mWlskKC/vajb85wM3UPg/D9nK6RbI1NgaVTg6AeXBVbknA==}
     dependencies:
       defu: 6.1.0
-      dotenv: 16.0.2
+      dotenv: 16.0.3
       gittar: 0.1.1
       jiti: 1.16.0
       mlly: 0.5.16
@@ -3022,14 +3022,9 @@ packages:
       type-fest: 2.19.0
     dev: true
 
-  /dotenv/16.0.2:
-    resolution: {integrity: sha512-JvpYKUmzQhYoIFgK2MOnF3bciIZoItIIoryihy0rIA+H4Jy0FmgyKYAHCTN98P5ybGSJcIFbh6QKeJdtZd1qhA==}
-    engines: {node: '>=12'}
-
   /dotenv/16.0.3:
     resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
     engines: {node: '>=12'}
-    dev: true
 
   /duplexer/0.1.2:
     resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
@@ -4192,7 +4187,7 @@ packages:
       '@capsizecss/metrics': 0.3.0
       '@capsizecss/unpack': 0.1.0
       magic-regexp: 0.5.0
-      magic-string: 0.26.6
+      magic-string: 0.26.7
       pathe: 0.3.9
       scule: 0.3.2
       ufo: 0.8.5
@@ -5581,7 +5576,7 @@ packages:
     resolution: {integrity: sha512-zP6wG5tnDX2FYgnFco4KEG+Qg2ujBIgO1VP+d6ScabRndZAyvR34PdwmRPnDqXiXLCReNXH406NyKyXgrWqTqQ==}
     dependencies:
       estree-walker: 3.0.1
-      magic-string: 0.26.6
+      magic-string: 0.26.7
       mlly: 0.5.16
       ufo: 0.8.5
       unplugin: 0.9.6
@@ -5592,12 +5587,6 @@ packages:
     dependencies:
       sourcemap-codec: 1.4.8
     dev: true
-
-  /magic-string/0.26.6:
-    resolution: {integrity: sha512-6d+3bFybzyQFJYSoRsl9ZC0wheze8M1LrQC7tNMRqXR4izUTDOLMd9BtSuExK9iAukFh+s5K0WAhc/dlQ+HKYA==}
-    engines: {node: '>=12'}
-    dependencies:
-      sourcemap-codec: 1.4.8
 
   /magic-string/0.26.7:
     resolution: {integrity: sha512-hX9XH3ziStPoPhJxLq1syWuZMxbDvGNbVchfrdCtanC7D13888bMFow61x8axrx+GfHLtVeAx2kxL7tTGRl+Ow==}
@@ -6199,7 +6188,7 @@ packages:
       hash-sum: 2.0.0
       hookable: 5.3.0
       knitwork: 0.1.2
-      magic-string: 0.26.6
+      magic-string: 0.26.7
       mlly: 0.5.16
       nitropack: 0.5.4
       nuxi: 3.0.0-rc.11
@@ -8602,33 +8591,6 @@ packages:
       vscode-uri: 3.0.3
     dev: true
 
-  /vite/3.1.3:
-    resolution: {integrity: sha512-/3XWiktaopByM5bd8dqvHxRt5EEgRikevnnrpND0gRfNkrMrPaGGexhtLCzv15RcCMtV2CLw+BPas8YFeSG0KA==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    hasBin: true
-    peerDependencies:
-      less: '*'
-      sass: '*'
-      stylus: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      less:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      terser:
-        optional: true
-    dependencies:
-      esbuild: 0.15.10
-      postcss: 8.4.17
-      resolve: 1.22.1
-      rollup: 2.78.1
-    optionalDependencies:
-      fsevents: 2.3.2
-    dev: true
-
   /vite/3.1.7:
     resolution: {integrity: sha512-5vCAmU4S8lyVdFCInu9M54f/g8qbOMakVw5xJ4pjoaDy5wgy9sLLZkGdSLN52dlsBqh0tBqxjaqqa8LgPqwRAA==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -8656,8 +8618,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.24.0:
-    resolution: {integrity: sha512-k5j3FPTor+MJx2x0pDW2gtVk+s9VC6nSHT3SoqOIk9Je5fFpPgict+Xy2eAVXUogvSixs45Ya1oZk+oK93BO0w==}
+  /vitest/0.24.1:
+    resolution: {integrity: sha512-NKkK1xnDIOOr42pKBfGQQl6b6IWdFVBpG6ZS1T+nUlJuqcOiZ7lxjVwHy9wrtTYpJ0BWww9y6bSGYXubD29Nag==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -8688,7 +8650,7 @@ packages:
       tinybench: 2.3.0
       tinypool: 0.3.0
       tinyspy: 1.0.2
-      vite: 3.1.3
+      vite: 3.1.7
     transitivePeerDependencies:
       - less
       - sass
