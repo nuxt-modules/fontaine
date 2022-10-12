@@ -93,6 +93,6 @@
   },
   "packageManager": "pnpm@7.13.4",
   "volta": {
-    "node": "16.17.1"
+    "node": "16.18.0"
   }
 }
