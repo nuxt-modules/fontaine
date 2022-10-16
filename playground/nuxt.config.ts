@@ -1,7 +1,6 @@
-import { defineNuxtConfig } from 'nuxt'
-
 export default defineNuxtConfig({
   modules: ['nuxt-font-metrics'],
+  css: ['~/assets/css/fonts/font.css'],
   fontMetrics: {
     fonts: [
       {
