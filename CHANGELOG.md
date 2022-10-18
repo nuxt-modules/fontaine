@@ -1,5 +1,7 @@
 
 
+## [0.2.1](https://github.com/danielroe/nuxt-font-metrics/compare/0.2.0...0.2.1) (2022-10-18)
+
 ## [0.2.0](https://github.com/danielroe/nuxt-font-metrics/compare/0.1.2...0.2.0) (2022-10-02)
 
 ## [0.1.2](https://github.com/danielroe/nuxt-font-metrics/compare/0.1.1...0.1.2) (2022-09-02)
