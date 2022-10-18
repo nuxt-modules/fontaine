@@ -1,4 +1,4 @@
-# Nuxt Font Metrics
+# Nuxt Fontaine
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -7,12 +7,12 @@
 
 > Font metric override implementation for [Nuxt 3](https://v3.nuxtjs.org)
 
-- [✨ &nbsp;Changelog](https://github.com/danielroe/nuxt-font-metrics/blob/main/CHANGELOG.md)
-- [▶️ &nbsp;Online playground](https://stackblitz.com/github/danielroe/nuxt-font-metrics/tree/main/playground)
+- [✨ &nbsp;Changelog](https://github.com/nuxt-modules/fontaine/blob/main/CHANGELOG.md)
+- [▶️ &nbsp;Online playground](https://stackblitz.com/github/nuxt-modules/fontaine/tree/main/playground)
 
 ## Features
 
-**⚠️ `nuxt-font-metrics` is under active development. ⚠️**
+**⚠️ `@nuxtjs/fontaine` is under active development. ⚠️**
 
 - 💪 Reduces CLS by using local font fallbacks with crafted font metrics.
 - ✨ Generates font metrics and overrides automatically.
@@ -36,19 +36,19 @@ For best performance, you will need to inline _all_ your CSS, not just the font-
 With `pnpm`
 
 ```bash
-pnpm add -D nuxt-font-metrics
+pnpm add -D @nuxtjs/fontaine
 ```
 
 Or, with `npm`
 
 ```bash
-npm install -D nuxt-font-metrics
+npm install -D @nuxtjs/fontaine
 ```
 
 Or, with `yarn`
 
 ```bash
-yarn add -D nuxt-font-metrics
+yarn add -D @nuxtjs/fontaine
 ```
 
 ## Usage
@@ -57,7 +57,7 @@ yarn add -D nuxt-font-metrics
 import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
-  modules: ['nuxt-font-metrics'],
+  modules: ['@nuxtjs/fontaine'],
   // If you are using a Google font or you don't have a @font-face declaration
   // for a font you're using, you can declare them here.
   //
@@ -130,11 +130,11 @@ Published under the [MIT License](./LICENCE).
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/nuxt-font-metrics?style=flat-square
-[npm-version-href]: https://npmjs.com/package/nuxt-font-metrics
-[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-font-metrics?style=flat-square
-[npm-downloads-href]: https://npmjs.com/package/nuxt-font-metrics
-[github-actions-src]: https://img.shields.io/github/workflow/status/danielroe/nuxt-font-metrics/ci/main?style=flat-square
-[github-actions-href]: https://github.com/danielroe/nuxt-font-metrics/actions?query=workflow%3Aci
-[codecov-src]: https://img.shields.io/codecov/c/gh/danielroe/nuxt-font-metrics/main?style=flat-square
-[codecov-href]: https://codecov.io/gh/danielroe/nuxt-font-metrics
+[npm-version-src]: https://img.shields.io/npm/v/@nuxtjs/fontaine?style=flat-square
+[npm-version-href]: https://npmjs.com/package/@nuxtjs/fontaine
+[npm-downloads-src]: https://img.shields.io/npm/dm/@nuxtjs/fontaine?style=flat-square
+[npm-downloads-href]: https://npmjs.com/package/@nuxtjs/fontaine
+[github-actions-src]: https://img.shields.io/github/workflow/status/nuxt-modules/fontaine/ci/main?style=flat-square
+[github-actions-href]: https://github.com/nuxt-modules/fontaine/actions?query=workflow%3Aci
+[codecov-src]: https://img.shields.io/codecov/c/gh/nuxt-modules/fontaine/main?style=flat-square
+[codecov-href]: https://codecov.io/gh/nuxt-modules/fontaine

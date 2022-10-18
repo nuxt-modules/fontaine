@@ -8,7 +8,7 @@
     "generate": "nuxi generate"
   },
   "devDependencies": {
-    "nuxt": "^3.0.0-rc.11",
-    "nuxt-font-metrics": "latest"
+    "@nuxtjs/fontaine": "latest",
+    "nuxt": "^3.0.0-rc.11"
   }
 }

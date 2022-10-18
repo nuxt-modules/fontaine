@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ['nuxt-font-metrics'],
+  modules: ['@nuxtjs/fontaine'],
   css: ['~/assets/css/fonts/font.css'],
   fontMetrics: {
     fonts: [
