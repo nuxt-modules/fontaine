@@ -8,7 +8,7 @@ interface NitroTransformPluginOptions {
 
 export const NitroTransformPlugin = (options: NitroTransformPluginOptions): Plugin => ({
   name: 'nuxt-fontaine-transform-nitro',
-  transform (code, source) {
+  transform(code, source) {
     if (!code.includes('__INLINED_CSS__')) return
 
     const s = new MagicString(code)
