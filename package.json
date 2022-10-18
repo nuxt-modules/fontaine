@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-font-metrics",
+  "name": "@nuxtjs/fontaine",
   "version": "0.2.1",
   "license": "MIT",
-  "repository": "danielroe/nuxt-font-metrics",
+  "repository": "nuxt-modules/fontaine",
   "keywords": [
     "nuxt",
     "module",
@@ -89,7 +89,7 @@
     "vue": "^3.2.41"
   },
   "resolutions": {
-    "nuxt-font-metrics": "link:."
+    "@nuxtjs/fontaine": "link:."
   },
   "packageManager": "pnpm@7.13.5",
   "volta": {

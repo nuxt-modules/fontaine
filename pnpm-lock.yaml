@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 overrides:
-  nuxt-font-metrics: link:.
+  '@nuxtjs/fontaine': link:.
 
 importers:
 
@@ -72,11 +72,11 @@ importers:
 
   playground:
     specifiers:
+      '@nuxtjs/fontaine': link:..
       nuxt: ^3.0.0-rc.11
-      nuxt-font-metrics: link:..
     devDependencies:
+      '@nuxtjs/fontaine': link:..
       nuxt: 3.0.0-rc.11
-      nuxt-font-metrics: link:..
 
 packages:
 
