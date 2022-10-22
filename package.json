@@ -72,7 +72,7 @@
     "@vitest/coverage-c8": "^0.24.3",
     "c8": "^7.12.0",
     "conventional-changelog-conventionalcommits": "^5.0.0",
-    "eslint": "^8.25.0",
+    "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "expect-type": "^0.15.0",
@@ -91,7 +91,7 @@
   "resolutions": {
     "@nuxtjs/fontaine": "link:."
   },
-  "packageManager": "pnpm@7.13.6",
+  "packageManager": "pnpm@7.14.0",
   "volta": {
     "node": "16.18.0"
   }
