@@ -46,6 +46,9 @@ export default defineNuxtModule<ModuleOptions>({
   meta: {
     configKey: 'fontMetrics',
     name: '@nuxtjs/fontaine',
+    compatibility: {
+      nuxt: '^3.0.0-rc.6'
+    }
   },
   defaults: nuxt => ({
     inject: true,
@@ -53,7 +56,7 @@ export default defineNuxtModule<ModuleOptions>({
     fallbacks: ['BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans'],
     fonts: [],
   }),
-  async setup(options, nuxt) {
+  async setup (options, nuxt) {
     // Skip when preparing
     if (nuxt.options._prepare) return
 
@@ -127,8 +130,7 @@ export default defineNuxtModule<ModuleOptions>({
         getContents: async () =>
           [
             `const css = \`${(await css).replace(/\s+/g, ' ')}\``,
-            `export default defineNuxtPlugin(() => { useHead({ style: [{ children: css ${
-              !nuxt.options.dev && options.inject ? '+ __INLINED_CSS__ ' : ''
+            `export default defineNuxtPlugin(() => { useHead({ style: [{ children: css ${!nuxt.options.dev && options.inject ? '+ __INLINED_CSS__ ' : ''
             }}] }) })`,
           ].join('\n'),
         mode: 'server',
