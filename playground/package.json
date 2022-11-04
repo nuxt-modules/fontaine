@@ -9,6 +9,6 @@
   },
   "devDependencies": {
     "@nuxtjs/fontaine": "latest",
-    "nuxt": "^3.0.0-rc.12"
+    "nuxt": "^3.0.0-rc.13"
   }
 }
