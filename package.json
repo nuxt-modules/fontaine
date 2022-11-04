@@ -55,7 +55,7 @@
     "postpublish": "pinst --enable"
   },
   "dependencies": {
-    "@nuxt/kit": "3.0.0-rc.12",
+    "@nuxt/kit": "3.0.0-rc.13",
     "fontaine": "^0.2.3",
     "magic-string": "^0.26.7",
     "pathe": "^0.3.9",
@@ -63,8 +63,8 @@
   },
   "devDependencies": {
     "@nuxt/module-builder": "^0.2.0",
-    "@nuxt/schema": "3.0.0-rc.12",
-    "@nuxt/test-utils": "3.0.0-rc.12",
+    "@nuxt/schema": "3.0.0-rc.13",
+    "@nuxt/test-utils": "3.0.0-rc.13",
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
     "@release-it/conventional-changelog": "^5.1.1",
     "@types/node": "^18.11.9",
@@ -79,7 +79,7 @@
     "get-port-please": "^2.6.1",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "nuxt": "npm:nuxt3@3.0.0-rc.13-27791915.19a2cd1",
+    "nuxt": "npm:nuxt3@3.0.0-rc.14-27792704.bde9694",
     "pinst": "^3.0.0",
     "prettier": "^2.7.1",
     "release-it": "^15.5.0",
