@@ -15,8 +15,8 @@ importers:
       '@release-it/conventional-changelog': 5.1.1
       '@types/node': 18.11.9
       '@types/serve-handler': 6.1.1
-      '@vitest/coverage-c8': ^0.24.5
-      c8: ^7.12.0
+      '@vitest/coverage-c8': 0.24.5
+      c8: 7.12.0
       conventional-changelog-conventionalcommits: 5.0.0
       eslint: ^8.26.0
       eslint-config-prettier: ^8.5.0
@@ -35,7 +35,7 @@ importers:
       serve-handler: 6.1.5
       typescript: 4.8.4
       ufo: ^0.8.6
-      vitest: ^0.24.5
+      vitest: 0.24.5
       vue: 3.2.41
     dependencies:
       '@nuxt/kit': 3.0.0-rc.13
