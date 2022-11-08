@@ -8,7 +8,7 @@ importers:
   .:
     specifiers:
       '@nuxt/kit': 3.0.0-rc.13
-      '@nuxt/module-builder': ^0.2.0
+      '@nuxt/module-builder': 0.2.0
       '@nuxt/schema': 3.0.0-rc.13
       '@nuxt/test-utils': 3.0.0-rc.13
       '@nuxtjs/eslint-config-typescript': 11.0.0
@@ -73,7 +73,7 @@ importers:
   playground:
     specifiers:
       '@nuxtjs/fontaine': link:..
-      nuxt: ^3.0.0-rc.13
+      nuxt: 3.0.0-rc.13
     devDependencies:
       '@nuxtjs/fontaine': link:..
       nuxt: 3.0.0-rc.13
