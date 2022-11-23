@@ -15,7 +15,7 @@ importers:
       '@release-it/conventional-changelog': 5.1.1
       '@types/node': 18.11.9
       '@types/serve-handler': 6.1.1
-      '@vitest/coverage-c8': 0.25.2
+      '@vitest/coverage-c8': 0.25.3
       c8: 7.12.0
       conventional-changelog-conventionalcommits: 5.0.0
       eslint: 8.28.0
@@ -35,7 +35,7 @@ importers:
       serve-handler: 6.1.5
       typescript: 4.9.3
       ufo: ^0.8.6
-      vitest: 0.25.2
+      vitest: 0.25.3
       vue: 3.2.45
     dependencies:
       '@nuxt/kit': 3.0.0-rc.13
@@ -51,7 +51,7 @@ importers:
       '@release-it/conventional-changelog': 5.1.1_release-it@15.5.0
       '@types/node': 18.11.9
       '@types/serve-handler': 6.1.1
-      '@vitest/coverage-c8': 0.25.2
+      '@vitest/coverage-c8': 0.25.3
       c8: 7.12.0
       conventional-changelog-conventionalcommits: 5.0.0
       eslint: 8.28.0
@@ -67,7 +67,7 @@ importers:
       release-it: 15.5.0
       serve-handler: 6.1.5
       typescript: 4.9.3
-      vitest: 0.25.2
+      vitest: 0.25.3
       vue: 3.2.45
 
   playground:
@@ -1600,11 +1600,11 @@ packages:
       vue: 3.2.45
     dev: true
 
-  /@vitest/coverage-c8/0.25.2:
-    resolution: {integrity: sha512-qKsiUJh3bjbB5Q229CbxEWCqiDBwvIrcZ9OOuQdMEC0pce3/LlTUK3+K3hd7WqAYEbbiqXfC5MVMKHZkV82PgA==}
+  /@vitest/coverage-c8/0.25.3:
+    resolution: {integrity: sha512-+tmrB3E7pZTSM+aWKzLk0FpyyaQOoRQf0594hHp+E3Kk0tiFONiEFYf7+9a1Z+C2ffU/0w6KvyBjpNPdashMrg==}
     dependencies:
       c8: 7.12.0
-      vitest: 0.25.2
+      vitest: 0.25.3
     transitivePeerDependencies:
       - '@edge-runtime/vm'
       - '@vitest/browser'
@@ -3813,7 +3813,7 @@ packages:
       eslint-plugin-import: 2.26.0_d5vn4nsvkp5ugznurcfxmdkaeu
       get-tsconfig: 4.2.0
       globby: 13.1.2
-      is-core-module: 2.10.0
+      is-core-module: 2.11.0
       is-glob: 4.0.3
       synckit: 0.8.4
     transitivePeerDependencies:
@@ -3888,7 +3888,7 @@ packages:
       eslint-import-resolver-node: 0.3.6
       eslint-module-utils: 2.7.3_clahhyedowhj7lywpxe6ohktxi
       has: 1.0.3
-      is-core-module: 2.10.0
+      is-core-module: 2.11.0
       is-glob: 4.0.3
       minimatch: 3.1.2
       object.values: 1.1.5
@@ -5094,12 +5094,6 @@ packages:
     hasBin: true
     dependencies:
       ci-info: 3.5.0
-    dev: true
-
-  /is-core-module/2.10.0:
-    resolution: {integrity: sha512-Erxj2n/LDAZ7H8WNJXd9tw38GYM3dv8rk8Zcs+jJuxYTW7sozH+SS8NtrSjVL1/vpLvWi1hxy96IzjJ3EHTJJg==}
-    dependencies:
-      has: 1.0.3
     dev: true
 
   /is-core-module/2.11.0:
@@ -8811,8 +8805,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.25.2:
-    resolution: {integrity: sha512-qqkzfzglEFbQY7IGkgSJkdOhoqHjwAao/OrphnHboeYHC5JzsVFoLCaB2lnAy8krhj7sbrFTVRApzpkTOeuDWQ==}
+  /vitest/0.25.3:
+    resolution: {integrity: sha512-/UzHfXIKsELZhL7OaM2xFlRF8HRZgAHtPctacvNK8H4vOcbJJAMEgbWNGSAK7Y9b1NBe5SeM7VTuz2RsTHFJJA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
