@@ -106,10 +106,7 @@ export default defineNuxtModule<ModuleOptions>({
         fallbacks: options.fallbacks,
         resolvePath,
         css: cssContext,
-        sourcemap:
-          typeof nuxt.options.sourcemap === 'boolean'
-            ? nuxt.options.sourcemap
-            : nuxt.options.sourcemap?.client || nuxt.options.sourcemap?.server,
+        sourcemap: nuxt.options.sourcemap.client,
       }
       addVitePlugin(FontaineTransform.vite(transformOptions), { server: false })
       addWebpackPlugin(FontaineTransform.webpack(transformOptions), { server: false })
