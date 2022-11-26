@@ -78,7 +78,7 @@
     "expect-type": "0.15.0",
     "get-port-please": "2.6.1",
     "husky": "8.0.2",
-    "lint-staged": "13.0.3",
+    "lint-staged": "13.0.4",
     "nuxt": "npm:nuxt3@3.0.0-rc.14-27802701.2f53495",
     "pinst": "3.0.0",
     "prettier": "2.8.0",
