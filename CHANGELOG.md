@@ -1,5 +1,12 @@
 
 
+## [0.2.3](https://github.com/nuxt-modules/fontaine/compare/0.2.2...0.2.3) (2022-11-30)
+
+
+### Bug Fixes
+
+* only generate sourcemaps respecting client sourcemap property ([cebbe4c](https://github.com/nuxt-modules/fontaine/commit/cebbe4c46adcbc71e53cf7dd06b2e17bcc720e95))
+
 ## [0.2.2](https://github.com/nuxt-modules/fontaine/compare/0.2.1...0.2.2) (2022-10-18)
 
 ## [0.2.1](https://github.com/nuxt-modules/fontaine/compare/0.2.0...0.2.1) (2022-10-18)
