@@ -34,7 +34,7 @@ importers:
       release-it: 15.5.0
       serve-handler: 6.1.5
       typescript: 4.9.3
-      ufo: ^0.8.6
+      ufo: ^1.0.0
       vitest: 0.25.3
       vue: 3.2.45
     dependencies:
@@ -42,7 +42,7 @@ importers:
       fontaine: 0.2.3
       magic-string: 0.26.7
       pathe: 0.3.9
-      ufo: 0.8.6
+      ufo: 1.0.0
     devDependencies:
       '@nuxt/module-builder': 0.2.0
       '@nuxt/schema': 3.0.0-rc.13
@@ -8352,6 +8352,10 @@ packages:
 
   /ufo/0.8.6:
     resolution: {integrity: sha512-fk6CmUgwKCfX79EzcDQQpSCMxrHstvbLswFChHS0Vump+kFkw7nJBfTZoC1j0bOGoY9I7R3n2DGek5ajbcYnOw==}
+
+  /ufo/1.0.0:
+    resolution: {integrity: sha512-DRty0ZBNlJ2R59y4mEupJRKLbkLQsc4qtxjpQv78AwEDuBkaUogMc2LkeqW3HddFlw6NwnXYfdThEZOiNgkmmQ==}
+    dev: false
 
   /uglify-js/3.17.3:
     resolution: {integrity: sha512-JmMFDME3iufZnBpyKL+uS78LRiC+mK55zWfM5f/pWBJfpOttXAqYfdDGRukYhJuyRinvPVAtUhvy7rlDybNtFg==}
