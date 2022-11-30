@@ -28,7 +28,7 @@ importers:
       lint-staged: 13.0.4
       magic-string: ^0.26.7
       nuxt: npm:nuxt3@3.0.0-rc.9-27703329.537338f
-      pathe: ^0.3.9
+      pathe: ^1.0.0
       pinst: 3.0.0
       prettier: 2.8.0
       release-it: 15.5.0
@@ -41,7 +41,7 @@ importers:
       '@nuxt/kit': 3.0.0
       fontaine: 0.2.3
       magic-string: 0.26.7
-      pathe: 0.3.9
+      pathe: 1.0.0
       ufo: 1.0.0
     devDependencies:
       '@nuxt/module-builder': 0.2.1
