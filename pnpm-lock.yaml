@@ -704,35 +704,6 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxt/telemetry/2.1.6:
-    resolution: {integrity: sha512-1+nhSxGTADRC4tMkKvt3gpgI659UHygNDx0eU9PJgNEtNoqeJ7gHAZ5cXyO4vw9g6ujgxbdEmoL8uHuyaANarA==}
-    hasBin: true
-    dependencies:
-      '@nuxt/kit': 3.0.0
-      chalk: 5.1.2
-      ci-info: 3.5.0
-      consola: 2.15.3
-      create-require: 1.1.1
-      defu: 6.1.1
-      destr: 1.2.1
-      dotenv: 16.0.3
-      fs-extra: 10.1.0
-      git-url-parse: 13.1.0
-      inquirer: 9.1.4
-      is-docker: 3.0.0
-      jiti: 1.16.0
-      mri: 1.2.0
-      nanoid: 4.0.0
-      node-fetch: 3.2.10
-      ohmyfetch: 0.4.21
-      parse-git-config: 3.0.0
-      rc9: 1.2.2
-      std-env: 3.3.1
-    transitivePeerDependencies:
-      - rollup
-      - supports-color
-    dev: true
-
   /@nuxt/telemetry/2.1.8:
     resolution: {integrity: sha512-WCHRrcPKRosuHQi8CD5WfjiXGAyjOWVJpK77xS6wlg8zwziBPCqmVIQdr4QpFTGFO1Nrh4z26l1VnivKy22KFQ==}
     hasBin: true
@@ -2534,10 +2505,6 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /ci-info/3.5.0:
-    resolution: {integrity: sha512-yH4RezKOGlOhxkmhbeNuC4eYZKAUsEaGtBuBzDDP1eFUKiccDWzBABxBfOx31IDwDIXMTxWuwAxUGModvkbuVw==}
-    dev: true
-
   /ci-info/3.7.0:
     resolution: {integrity: sha512-2CpRNYmImPx+RXKLq6jko/L07phmS9I02TyqkcNU20GCF/GgaWvc58hPtjxDX8lPpkdwc9sNh72V9k00S7ezog==}
     engines: {node: '>=8'}
@@ -3278,10 +3245,6 @@ packages:
 
   /deprecation/2.3.1:
     resolution: {integrity: sha512-xmHIy4F3scKVwMsQ4WnVaS8bHOx0DmVwRywosKhaILI0ywMDWPtBSku2HNxRvF7jtwDRsoEwYQSfbxj8b7RlJQ==}
-    dev: true
-
-  /destr/1.2.0:
-    resolution: {integrity: sha512-JG+cG4ZPB1L27sl2C2URg8MIOmIUtTbE5wEx02BpmrTCqg/hXxFKXsYsnODl5PdpqNRaS1KQGUQ56V8jk8XpYQ==}
     dev: true
 
   /destr/1.2.1:
@@ -5016,10 +4979,6 @@ packages:
   /hash-sum/2.0.0:
     resolution: {integrity: sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==}
 
-  /hookable/5.4.1:
-    resolution: {integrity: sha512-i808BglQ1OuSIcgPSZoWsDapCMLXKe5wLS6XZvIXpaBWdWLUZARM8vOLayu6cXewj5TSbaZaMzKnq+pRnfscEQ==}
-    dev: true
-
   /hookable/5.4.2:
     resolution: {integrity: sha512-6rOvaUiNKy9lET1X0ECnyZ5O5kSV0PJbtA5yZUgdEF7fGJEVwSLSislltyt7nFwVVALYHQJtfGeAR2Y0A0uJkg==}
     dev: true
@@ -5230,23 +5189,6 @@ packages:
   /interpret/1.4.0:
     resolution: {integrity: sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==}
     engines: {node: '>= 0.10'}
-    dev: true
-
-  /ioredis/5.2.3:
-    resolution: {integrity: sha512-gQNcMF23/NpvjCaa1b5YycUyQJ9rBNH2xP94LWinNpodMWVUPP5Ai/xXANn/SM7gfIvI62B5CCvZxhg5pOgyMw==}
-    engines: {node: '>=12.22.0'}
-    dependencies:
-      '@ioredis/commands': 1.2.0
-      cluster-key-slot: 1.1.1
-      debug: 4.3.4
-      denque: 2.1.0
-      lodash.defaults: 4.2.0
-      lodash.isarguments: 3.1.0
-      redis-errors: 1.2.0
-      redis-parser: 3.0.0
-      standard-as-callback: 2.1.0
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /ioredis/5.2.4:
@@ -6642,7 +6584,7 @@ packages:
       '@nuxt/devalue': 2.0.0
       '@nuxt/kit': /@nuxt/kit-edge/3.0.0-rc.9-27703329.537338f
       '@nuxt/schema': /@nuxt/schema-edge/3.0.0-rc.9-27703329.537338f
-      '@nuxt/telemetry': 2.1.6
+      '@nuxt/telemetry': 2.1.8
       '@nuxt/ui-templates': 0.3.3
       '@nuxt/vite-builder': /@nuxt/vite-builder-edge/3.0.0-rc.9-27703329.537338f_nd7b2n3efa5lac5af36pddr3jm
       '@vue/reactivity': 3.2.45
@@ -6651,13 +6593,13 @@ packages:
       chokidar: 3.5.3
       cookie-es: 0.5.0
       defu: 6.1.1
-      destr: 1.2.0
+      destr: 1.2.1
       escape-string-regexp: 5.0.0
       fs-extra: 10.1.0
       globby: 13.1.2
       h3: 0.7.21
       hash-sum: 2.0.0
-      hookable: 5.4.1
+      hookable: 5.4.2
       knitwork: 0.1.2
       magic-string: 0.26.7
       mlly: 0.5.16
@@ -6670,7 +6612,7 @@ packages:
       scule: 0.3.2
       strip-literal: 0.4.2
       ufo: 0.8.6
-      unctx: 2.0.2
+      unctx: 2.1.1
       unenv: 0.6.2
       unimport: 0.6.8
       unplugin: 0.9.6
@@ -8740,15 +8682,6 @@ packages:
       - supports-color
     dev: true
 
-  /unctx/2.0.2:
-    resolution: {integrity: sha512-3lcXTlDoOaguRVC1GqG3mrawy17yoycSAQDDnUayQYZ17v9to+Gn6Zyssroc/GD2ppJ0wF5V8adOcKkrNKVWow==}
-    dependencies:
-      acorn: 8.8.1
-      estree-walker: 3.0.1
-      magic-string: 0.26.7
-      unplugin: 0.9.6
-    dev: true
-
   /unctx/2.1.1:
     resolution: {integrity: sha512-RffJlpvLOtolWsn0fxXsuSDfwiWcR6cyuykw2e0+zAggvGW1SesXt9WxIWlWpJhwVCZD/WlxxLqKLS50Q0CkWA==}
     dependencies:
@@ -8895,7 +8828,7 @@ packages:
       acorn: 8.8.1
       chokidar: 3.5.3
       webpack-sources: 3.2.3
-      webpack-virtual-modules: 0.4.5
+      webpack-virtual-modules: 0.4.6
     dev: true
 
   /unplugin/1.0.0:
@@ -8913,12 +8846,12 @@ packages:
       chokidar: 3.5.3
       destr: 1.2.1
       h3: 0.7.21
-      ioredis: 5.2.3
+      ioredis: 5.2.4
       listhen: 0.2.15
       mri: 1.2.0
       ohmyfetch: 0.4.21
       ufo: 0.8.6
-      ws: 8.9.0
+      ws: 8.11.0
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -9450,10 +9383,6 @@ packages:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
 
-  /webpack-virtual-modules/0.4.5:
-    resolution: {integrity: sha512-8bWq0Iluiv9lVf9YaqWQ9+liNgXSHICm+rg544yRgGYaR8yXZTVBaHZkINZSB2yZSWo4b0F6MIxqJezVfOEAlg==}
-    dev: true
-
   /webpack-virtual-modules/0.4.6:
     resolution: {integrity: sha512-5tyDlKLqPfMqjT3Q9TAqf2YqjwmnUleZwzJi1A5qXnlBCdj2AtOJ6wAWdglTIDOPgOiOrXeBeFcsQ8+aGQ6QbA==}
 
@@ -9576,19 +9505,6 @@ packages:
 
   /ws/8.11.0:
     resolution: {integrity: sha512-HPG3wQd9sNQoT9xHyNCXoDUa+Xw/VevmY9FoHyQ+g+rrMn4j6FB4np7Z0OhdTgjx6MgQLK7jwSy1YecU1+4Asg==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: ^5.0.2
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
-    dev: true
-
-  /ws/8.9.0:
-    resolution: {integrity: sha512-Ja7nszREasGaYUYCI2k4lCKIRTt+y7XuqVoHR44YpI49TtryyqbqvDMn5eqfW7e6HzTukDRIsXqzVHScqRcafg==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
