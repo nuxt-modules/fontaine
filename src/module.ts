@@ -114,7 +114,7 @@ export default defineNuxtModule<ModuleOptions>({
         // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         config.rollupConfig!.plugins!.push(
           NitroTransformPlugin({
-            sourcemap: config.sourceMap,
+            sourcemap: true,
             cssContext,
           })
         )
