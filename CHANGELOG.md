@@ -1,5 +1,12 @@
 
 
+## [0.2.4](https://github.com/nuxt-modules/fontaine/compare/0.2.3...0.2.4) (2023-01-01)
+
+
+### Bug Fixes
+
+* always produce sourcemap for nitro transform ([2c95754](https://github.com/nuxt-modules/fontaine/commit/2c95754dfafb26cada2770146db18442c3d39beb))
+
 ## [0.2.3](https://github.com/nuxt-modules/fontaine/compare/0.2.2...0.2.3) (2022-11-30)
 
 
