@@ -77,7 +77,7 @@
     "eslint-plugin-prettier": "4.2.1",
     "expect-type": "0.15.0",
     "get-port-please": "2.6.1",
-    "husky": "8.0.2",
+    "husky": "8.0.3",
     "lint-staged": "13.1.0",
     "nuxt": "3.0.0",
     "pinst": "3.0.0",
