@@ -76,7 +76,7 @@
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-prettier": "4.2.1",
     "expect-type": "0.15.0",
-    "get-port-please": "2.6.1",
+    "get-port-please": "3.0.1",
     "husky": "8.0.3",
     "lint-staged": "13.1.0",
     "nuxt": "3.0.0",
