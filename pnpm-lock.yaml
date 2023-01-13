@@ -15,7 +15,7 @@ importers:
       '@release-it/conventional-changelog': 5.1.1
       '@types/node': 18.11.18
       '@types/serve-handler': 6.1.1
-      '@vitest/coverage-c8': 0.26.3
+      '@vitest/coverage-c8': 0.27.1
       c8: 7.12.0
       conventional-changelog-conventionalcommits: 5.0.0
       eslint: 8.31.0
@@ -35,7 +35,7 @@ importers:
       serve-handler: 6.1.5
       typescript: 4.9.4
       ufo: ^1.0.0
-      vitest: 0.26.3
+      vitest: 0.27.1
       vue: 3.2.45
     dependencies:
       '@nuxt/kit': 3.0.0
@@ -51,7 +51,7 @@ importers:
       '@release-it/conventional-changelog': 5.1.1_release-it@15.6.0
       '@types/node': 18.11.18
       '@types/serve-handler': 6.1.1
-      '@vitest/coverage-c8': 0.26.3
+      '@vitest/coverage-c8': 0.27.1
       c8: 7.12.0
       conventional-changelog-conventionalcommits: 5.0.0
       eslint: 8.31.0
@@ -67,7 +67,7 @@ importers:
       release-it: 15.6.0
       serve-handler: 6.1.5
       typescript: 4.9.4
-      vitest: 0.26.3
+      vitest: 0.27.1
       vue: 3.2.45
 
   playground:
@@ -730,7 +730,7 @@ packages:
       h3: 1.0.1
       knitwork: 1.0.0
       magic-string: 0.26.7
-      mlly: 1.0.0
+      mlly: 1.1.0
       ohash: 1.0.0
       pathe: 1.0.0
       perfect-debounce: 0.1.3
@@ -740,7 +740,7 @@ packages:
       postcss-url: 10.1.3_postcss@8.4.19
       rollup: 2.79.1
       rollup-plugin-visualizer: 5.8.3_rollup@2.79.1
-      ufo: 1.0.0
+      ufo: 1.0.1
       unplugin: 1.0.0
       vite: 3.2.4_@types+node@18.11.18
       vite-node: 0.25.3_@types+node@18.11.18
@@ -784,7 +784,7 @@ packages:
       h3: 1.0.1
       knitwork: 1.0.0
       magic-string: 0.26.7
-      mlly: 1.0.0
+      mlly: 1.1.0
       ohash: 1.0.0
       pathe: 1.0.0
       perfect-debounce: 0.1.3
@@ -794,7 +794,7 @@ packages:
       postcss-url: 10.1.3_postcss@8.4.19
       rollup: 2.79.1
       rollup-plugin-visualizer: 5.8.3_rollup@2.79.1
-      ufo: 1.0.0
+      ufo: 1.0.1
       unplugin: 1.0.0
       vite: 3.2.4
       vite-node: 0.25.3
@@ -1530,11 +1530,11 @@ packages:
       vue: 3.2.45
     dev: true
 
-  /@vitest/coverage-c8/0.26.3:
-    resolution: {integrity: sha512-sjmVYPozajWY2DawzuvhYX6hEe/LD6p2xv9VmPvh1zzDeNNVCAnyLcvXoaSMQD522x9bqciuyPrlrnh2iNkE/w==}
+  /@vitest/coverage-c8/0.27.1:
+    resolution: {integrity: sha512-/9VTGDIAp4hv8PBawfyijxhkiyucfOxFRRP+7kzy3Dj0wONy1Mc2MBoPmiH4aZVc0LViQqecrQLs8JVGt42keA==}
     dependencies:
       c8: 7.12.0
-      vitest: 0.26.3
+      vitest: 0.27.1
     transitivePeerDependencies:
       - '@edge-runtime/vm'
       - '@vitest/browser'
@@ -2107,6 +2107,11 @@ packages:
       v8-to-istanbul: 9.0.1
       yargs: 16.2.0
       yargs-parser: 20.2.9
+    dev: true
+
+  /cac/6.7.14:
+    resolution: {integrity: sha512-b6Ilus+c3RrdDk+JhLKUAQfzzgLEPy6wcXqS7f/xe1EETvsDP6GORG7SFuOs6cID5YkqchW/LXZbX5bc8j7ZcQ==}
+    engines: {node: '>=8'}
     dev: true
 
   /cacheable-lookup/7.0.0:
@@ -3867,9 +3872,9 @@ packages:
     resolution: {integrity: sha512-MAU9ci3XdpqOX1aoIoyL2DMzW97P8LYeJxIUkfXhOfsrkH4KLHFaYDwKN0B2l6tqedVJWiTIJtWmxmZfa05vOQ==}
     dependencies:
       enhanced-resolve: 5.10.0
-      mlly: 1.0.0
+      mlly: 1.1.0
       pathe: 1.0.0
-      ufo: 1.0.0
+      ufo: 1.0.1
     dev: true
 
   /fast-deep-equal/3.1.3:
@@ -4398,7 +4403,7 @@ packages:
       cookie-es: 0.5.0
       destr: 1.2.1
       radix3: 1.0.0
-      ufo: 1.0.0
+      ufo: 1.0.1
     dev: true
 
   /handlebars/4.7.7:
@@ -5176,7 +5181,7 @@ packages:
       http-shutdown: 1.2.2
       ip-regex: 5.0.0
       node-forge: 1.3.1
-      ufo: 1.0.0
+      ufo: 1.0.1
     dev: true
 
   /listr2/5.0.5:
@@ -5615,6 +5620,15 @@ packages:
       pkg-types: 1.0.1
       ufo: 1.0.0
 
+  /mlly/1.1.0:
+    resolution: {integrity: sha512-cwzBrBfwGC1gYJyfcy8TcZU1f+dbH/T+TuOhtYP2wLv/Fb51/uV7HJQfBPtEupZ2ORLRU1EKFS/QfS3eo9+kBQ==}
+    dependencies:
+      acorn: 8.8.1
+      pathe: 1.0.0
+      pkg-types: 1.0.1
+      ufo: 1.0.1
+    dev: true
+
   /modify-values/1.0.1:
     resolution: {integrity: sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==}
     engines: {node: '>=0.10.0'}
@@ -5716,7 +5730,7 @@ packages:
       knitwork: 1.0.0
       listhen: 1.0.1
       mime: 3.0.0
-      mlly: 1.0.0
+      mlly: 1.1.0
       mri: 1.2.0
       node-fetch-native: 1.0.1
       ofetch: 1.0.0
@@ -5735,7 +5749,7 @@ packages:
       serve-static: 1.15.0
       source-map-support: 0.5.21
       std-env: 3.3.1
-      ufo: 1.0.0
+      ufo: 1.0.1
       unenv: 1.0.0
       unimport: 1.0.1_rollup@2.79.1
       unstorage: 1.0.1
@@ -7403,6 +7417,10 @@ packages:
       get-intrinsic: 1.1.3
       object-inspect: 1.12.2
 
+  /siginfo/2.0.0:
+    resolution: {integrity: sha512-ybx0WO1/8bSBLEWXZvEd7gMW3Sn3JFlW3TvX1nREbDLRNQNaeNN8WK0meBwPdAaOI7TtRRRJn/Es1zhrrCHu7g==}
+    dev: true
+
   /signal-exit/3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
     dev: true
@@ -7528,6 +7546,10 @@ packages:
   /stable/0.1.8:
     resolution: {integrity: sha512-ji9qxRnOVfcuLDySj9qzhGSEFVobyt1kIOSkj1qZzYLzq7Tos/oUUWvotUPQLlrsidqsK6tBH89Bc9kL5zHA6w==}
     deprecated: 'Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility'
+    dev: true
+
+  /stackback/0.0.2:
+    resolution: {integrity: sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==}
     dev: true
 
   /standard-as-callback/2.1.0:
@@ -7961,6 +7983,10 @@ packages:
   /ufo/1.0.0:
     resolution: {integrity: sha512-DRty0ZBNlJ2R59y4mEupJRKLbkLQsc4qtxjpQv78AwEDuBkaUogMc2LkeqW3HddFlw6NwnXYfdThEZOiNgkmmQ==}
 
+  /ufo/1.0.1:
+    resolution: {integrity: sha512-boAm74ubXHY7KJQZLlXrtMz52qFvpsbOxDcZOnw/Wf+LS4Mmyu7JxmzD4tDLtUQtmZECypJ0FrCz4QIe6dvKRA==}
+    dev: true
+
   /uglify-js/3.17.3:
     resolution: {integrity: sha512-JmMFDME3iufZnBpyKL+uS78LRiC+mK55zWfM5f/pWBJfpOttXAqYfdDGRukYhJuyRinvPVAtUhvy7rlDybNtFg==}
     engines: {node: '>=0.8.0'}
@@ -8153,7 +8179,7 @@ packages:
       mkdir: 0.0.2
       mri: 1.2.0
       ofetch: 1.0.0
-      ufo: 1.0.0
+      ufo: 1.0.1
       ws: 8.11.0
     transitivePeerDependencies:
       - bufferutil
@@ -8237,7 +8263,7 @@ packages:
     hasBin: true
     dependencies:
       debug: 4.3.4
-      mlly: 1.0.0
+      mlly: 1.1.0
       pathe: 0.2.0
       source-map: 0.6.1
       source-map-support: 0.5.21
@@ -8258,7 +8284,7 @@ packages:
     hasBin: true
     dependencies:
       debug: 4.3.4
-      mlly: 1.0.0
+      mlly: 1.1.0
       pathe: 0.2.0
       source-map: 0.6.1
       source-map-support: 0.5.21
@@ -8273,14 +8299,16 @@ packages:
       - terser
     dev: true
 
-  /vite-node/0.26.3_@types+node@18.11.18:
-    resolution: {integrity: sha512-Te2bq0Bfvq6XiO718I+1EinMjpNYKws6SNHKOmVbILAQimKoZKDd+IZLlkaYcBXPpK3HFe2U80k8Zw+m3w/a2w==}
+  /vite-node/0.27.1_@types+node@18.11.18:
+    resolution: {integrity: sha512-d6+ue/3NzsfndWaPbYh/bFkHbmAWfDXI4B874zRx+WREnG6CUHUbBC8lKaRYZjeR6gCPN5m1aVNNRXBYICA9XA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     dependencies:
+      cac: 6.7.14
       debug: 4.3.4
-      mlly: 1.0.0
+      mlly: 1.1.0
       pathe: 0.2.0
+      picocolors: 1.0.0
       source-map: 0.6.1
       source-map-support: 0.5.21
       vite: 3.2.4_@types+node@18.11.18
@@ -8437,8 +8465,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.26.3:
-    resolution: {integrity: sha512-FmHxU9aUCxTi23keF3vxb/Qp0lYXaaJ+jRLGOUmMS3qVTOJvgGE+f1VArupA6pEhaG2Ans4X+zV9dqM5WISMbg==}
+  /vitest/0.27.1:
+    resolution: {integrity: sha512-1sIpQ1DVFTEn7c1ici1XHcVfdU4nKiBmPtPAtGKJJJLuJjojTv/OHGgcf69P57alM4ty8V4NMv+7Yoi5Cxqx9g==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -8464,16 +8492,19 @@ packages:
       '@types/node': 18.11.18
       acorn: 8.8.1
       acorn-walk: 8.2.0
+      cac: 6.7.14
       chai: 4.3.7
       debug: 4.3.4
       local-pkg: 0.4.2
+      picocolors: 1.0.0
       source-map: 0.6.1
       strip-literal: 1.0.0
       tinybench: 2.3.1
       tinypool: 0.3.0
       tinyspy: 1.0.2
       vite: 3.2.4_@types+node@18.11.18
-      vite-node: 0.26.3_@types+node@18.11.18
+      vite-node: 0.27.1_@types+node@18.11.18
+      why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
       - sass
@@ -8535,7 +8566,7 @@ packages:
   /vue-bundle-renderer/1.0.0:
     resolution: {integrity: sha512-43vCqTgaMXfHhtR8/VcxxWD1DgtzyvNc4wNyG5NKCIH19O1z5G9ZCRXTGEA2wifVec5PU82CkRLD2sTK9NkTdA==}
     dependencies:
-      ufo: 1.0.0
+      ufo: 1.0.1
     dev: true
 
   /vue-devtools-stub/0.1.0:
@@ -8642,6 +8673,15 @@ packages:
     hasBin: true
     dependencies:
       isexe: 2.0.0
+    dev: true
+
+  /why-is-node-running/2.2.2:
+    resolution: {integrity: sha512-6tSwToZxTOcotxHeA+qGCq1mVzKR3CwcJGmVcY+QE8SHy6TnpFnh8PAvPNHYr7EcuVeG0QSMxtYCuO1ta/G/oA==}
+    engines: {node: '>=8'}
+    hasBin: true
+    dependencies:
+      siginfo: 2.0.0
+      stackback: 0.0.2
     dev: true
 
   /wide-align/1.1.5:
