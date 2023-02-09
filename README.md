@@ -54,7 +54,6 @@ yarn add -D @nuxtjs/fontaine
 ## Usage
 
 ```js
-import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
   modules: ['@nuxtjs/fontaine'],
