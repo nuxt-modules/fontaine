@@ -54,7 +54,6 @@ yarn add -D @nuxtjs/fontaine
 ## Usage
 
 ```js
-
 export default defineNuxtConfig({
   modules: ['@nuxtjs/fontaine'],
   // If you are using a Google font or you don't have a @font-face declaration
