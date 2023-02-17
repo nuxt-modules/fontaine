@@ -110,9 +110,10 @@ export default defineNuxtModule<ModuleOptions>({
       }
       addVitePlugin(FontaineTransform.vite(transformOptions), { server: false })
       addWebpackPlugin(FontaineTransform.webpack(transformOptions), { server: false })
-      nuxt.hook('nitro:config', config => {
-        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-        config.rollupConfig!.plugins!.push(
+      nuxt.hook('nitro:config', async (config) => {
+        const plugins = await config.rollupConfig!.plugins
+        if (!plugins || !Array.isArray(plugins)) return
+        plugins.push(
           NitroTransformPlugin({
             sourcemap: true,
             cssContext,
