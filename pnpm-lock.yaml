@@ -26,7 +26,7 @@ importers:
       get-port-please: 3.0.1
       husky: 8.0.3
       lint-staged: 13.1.2
-      magic-string: ^0.29.0
+      magic-string: ^0.30.0
       nuxt: 3.2.2
       pathe: ^1.0.0
       pinst: 3.0.0
@@ -40,7 +40,7 @@ importers:
     dependencies:
       '@nuxt/kit': 3.2.2
       fontaine: 0.2.3
-      magic-string: 0.29.0
+      magic-string: 0.30.0
       pathe: 1.1.0
       ufo: 1.1.0
     devDependencies:
@@ -5889,6 +5889,14 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.14
+    dev: true
+
+  /magic-string/0.30.0:
+    resolution: {integrity: sha512-LA+31JYDJLs82r2ScLrlz1GjSgu66ZV518eyWT+S8VhyQn/JL0u9MeBOvQMGYiPk1DBiSN9DDMOcXvigJZaViQ==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.14
+    dev: false
 
   /make-dir/3.1.0:
     resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==}
