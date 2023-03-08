@@ -127,6 +127,7 @@ export default defineNuxtModule<ModuleOptions>({
         filename: 'font-override-inlining-plugin.server.ts',
         getContents: async () =>
           [
+            `import { defineNuxtPlugin, useHead } from '#imports'`,
             `const css = \`${(await css).replace(/\s+/g, ' ')}\``,
             `export default defineNuxtPlugin(() => { useHead({ style: [{ children: css ${!nuxt.options.dev && options.inject ? '+ __INLINED_CSS__ ' : ''
             }}] }) })`,
