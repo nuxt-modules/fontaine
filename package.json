@@ -91,7 +91,7 @@
   "resolutions": {
     "@nuxtjs/fontaine": "link:."
   },
-  "packageManager": "pnpm@7.29.0",
+  "packageManager": "pnpm@7.29.1",
   "volta": {
     "node": "18.14.2"
   }
