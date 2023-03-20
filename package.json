@@ -67,7 +67,7 @@
     "@nuxt/test-utils": "3.3.1",
     "@nuxtjs/eslint-config-typescript": "12.0.0",
     "@release-it/conventional-changelog": "5.1.1",
-    "@types/node": "18.15.3",
+    "@types/node": "18.15.5",
     "@types/serve-handler": "6.1.1",
     "@vitest/coverage-c8": "0.29.3",
     "c8": "7.13.0",
