@@ -69,7 +69,7 @@
     "@release-it/conventional-changelog": "5.1.1",
     "@types/node": "18.15.5",
     "@types/serve-handler": "6.1.1",
-    "@vitest/coverage-c8": "0.29.3",
+    "@vitest/coverage-c8": "0.29.7",
     "c8": "7.13.0",
     "conventional-changelog-conventionalcommits": "5.0.0",
     "eslint": "8.36.0",
@@ -85,7 +85,7 @@
     "release-it": "15.9.0",
     "serve-handler": "6.1.5",
     "typescript": "5.0.2",
-    "vitest": "0.29.3",
+    "vitest": "0.29.7",
     "vue": "3.2.47"
   },
   "resolutions": {
