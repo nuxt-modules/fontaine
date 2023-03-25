@@ -31,7 +31,7 @@ importers:
       pathe: ^1.0.0
       pinst: 3.0.0
       prettier: 2.8.7
-      release-it: 15.9.1
+      release-it: 15.9.3
       serve-handler: 6.1.5
       typescript: 5.0.2
       ufo: ^1.0.0
@@ -48,7 +48,7 @@ importers:
       '@nuxt/schema': 3.3.1
       '@nuxt/test-utils': 3.3.1_vue@3.2.47
       '@nuxtjs/eslint-config-typescript': 12.0.0_j4766f7ecgqbon3u7zlxn5zszu
-      '@release-it/conventional-changelog': 5.1.1_release-it@15.9.1
+      '@release-it/conventional-changelog': 5.1.1_release-it@15.9.3
       '@types/node': 18.15.5
       '@types/serve-handler': 6.1.1
       '@vitest/coverage-c8': 0.29.7_vitest@0.29.7
@@ -64,7 +64,7 @@ importers:
       nuxt: 3.3.1_gtlryyczx6lbmo2dbdey6x7hia
       pinst: 3.0.0
       prettier: 2.8.7
-      release-it: 15.9.1
+      release-it: 15.9.3
       serve-handler: 6.1.5
       typescript: 5.0.2
       vitest: 0.29.7
@@ -1787,7 +1787,7 @@ packages:
       config-chain: 1.1.13
     dev: true
 
-  /@release-it/conventional-changelog/5.1.1_release-it@15.9.1:
+  /@release-it/conventional-changelog/5.1.1_release-it@15.9.3:
     resolution: {integrity: sha512-QtbDBe36dQfzexAfDYrbLPvd5Cb5bMWmLcjcGhCOWBss7fe1/gCjoxDULVz+7N7G5Nu2UMeBwHcUp/w8RDh5VQ==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1796,7 +1796,7 @@ packages:
       concat-stream: 2.0.0
       conventional-changelog: 3.1.25
       conventional-recommended-bump: 6.1.0
-      release-it: 15.9.1
+      release-it: 15.9.3
       semver: 7.3.8
     dev: true
 
@@ -5636,7 +5636,7 @@ packages:
       figures: 5.0.0
       lodash: 4.17.21
       mute-stream: 1.0.0
-      ora: 6.2.0
+      ora: 6.3.0
       run-async: 2.4.1
       rxjs: 7.8.0
       string-width: 5.1.2
@@ -7200,8 +7200,8 @@ packages:
       word-wrap: 1.2.3
     dev: true
 
-  /ora/6.2.0:
-    resolution: {integrity: sha512-c1qb/1rdE+EFDYiLXh10VY459uMh7DN9zlgd8mZJLoeiPpYllN8eAOiih2Rkah5ywxRm5tHN5C9zPheDq8d1MA==}
+  /ora/6.3.0:
+    resolution: {integrity: sha512-1/D8uRFY0ay2kgBpmAwmSA404w4OoPVhHMqRqtjvrcK/dnzcEZxMJ+V4DUbyICu8IIVRclHcOf5wlD1tMY4GUQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       chalk: 5.2.0
@@ -8174,8 +8174,8 @@ packages:
       rc: 1.2.8
     dev: true
 
-  /release-it/15.9.1:
-    resolution: {integrity: sha512-qTAjTkaBZDRJM0j/je2MzNASuwhBXFn0GTqHB7MfLEe9rIdVk+xEwUphbhNemp+wuC7PuZucBulUbH2m3EokHg==}
+  /release-it/15.9.3:
+    resolution: {integrity: sha512-yFZTGJ9lH075zEAiVB4w58GgQ+bFR4by+eNClN3sdLtTLwbEm9VXrISt+8vO1fHDH83557Fns5ub1FuhAY/a3A==}
     engines: {node: '>=14.9'}
     hasBin: true
     dependencies:
@@ -8195,7 +8195,7 @@ packages:
       new-github-release-url: 2.0.0
       node-fetch: 3.3.1
       open: 9.0.0
-      ora: 6.2.0
+      ora: 6.3.0
       os-name: 5.1.0
       promise.allsettled: 1.0.6
       proxy-agent: 5.0.0
