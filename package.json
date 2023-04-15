@@ -53,7 +53,7 @@
     "test:types": "tsc --noEmit"
   },
   "dependencies": {
-    "@nuxt/kit": "3.4.0",
+    "@nuxt/kit": "3.4.1",
     "fontaine": "^0.2.3",
     "magic-string": "^0.30.0",
     "pathe": "^1.0.0",
@@ -61,8 +61,8 @@
   },
   "devDependencies": {
     "@nuxt/module-builder": "0.3.0",
-    "@nuxt/schema": "3.4.0",
-    "@nuxt/test-utils": "3.4.0",
+    "@nuxt/schema": "3.4.1",
+    "@nuxt/test-utils": "3.4.1",
     "@nuxtjs/eslint-config-typescript": "12.0.0",
     "@types/node": "18.15.11",
     "@types/serve-handler": "6.1.1",
@@ -77,7 +77,7 @@
     "get-port-please": "3.0.1",
     "husky": "8.0.3",
     "lint-staged": "13.2.1",
-    "nuxt": "3.4.0",
+    "nuxt": "3.4.1",
     "prettier": "2.8.7",
     "serve-handler": "6.1.5",
     "typescript": "5.0.4",
