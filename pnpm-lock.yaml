@@ -8,7 +8,7 @@ importers:
   .:
     dependencies:
       '@nuxt/kit':
-        specifier: 3.4.2
+        specifier: ^3.4.2
         version: 3.4.2(rollup@3.20.2)
       fontaine:
         specifier: ^0.2.3
@@ -1510,7 +1510,7 @@ packages:
       debug: 4.3.4
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.4.0
+      semver: 7.5.0
       tsutils: 3.21.0(typescript@5.0.4)
       typescript: 5.0.4
     transitivePeerDependencies:
@@ -2118,7 +2118,7 @@ packages:
   /builtins@5.0.1:
     resolution: {integrity: sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==}
     dependencies:
-      semver: 7.4.0
+      semver: 7.5.0
     dev: true
 
   /bumpp@9.1.0:
