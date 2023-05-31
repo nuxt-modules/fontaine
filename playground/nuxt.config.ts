@@ -18,6 +18,13 @@ export default defineNuxtConfig({
         fallbacks: ['Georgia'],
         overrideName: 'fallback-c',
       },
+      {
+        family: 'Poppins',
+        fallbacks: ['Georgia'],
+        overrideName: 'fallback-poppins',
+        src: 'poppins.ttf',
+        root: 'assets',
+      },
     ]
   }
 })

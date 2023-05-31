@@ -29,6 +29,8 @@ interface CustomFont {
   overrideName?: string
   /** If you want to customise the fallbacks on a per-font basis. */
   fallbacks?: string[]
+  /** If you want to customise font directory. Default is Nuxt public directory. */
+  root?: string
 }
 
 export interface ModuleOptions {
@@ -40,6 +42,8 @@ export interface ModuleOptions {
   fallbacks: string[]
   /** Fonts to generate override declarations for. This is only necessary if you do not have `@font-face` declarations for them in your CSS. */
   fonts: Array<string | CustomFont>
+  /** If you want to customise directory for all fonts. Default is Nuxt public directory. */
+  root?: string
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -70,13 +74,13 @@ export default defineNuxtModule<ModuleOptions>({
     const css = (async () => {
       let css = ''
       for (const font of options.fonts) {
-        const { family, src, overrideName, fallbacks } =
+        const { family, src, overrideName, fallbacks, root: fontRoot } =
           typeof font === 'string' ? ({ family: font } as CustomFont) : font
 
         let metrics = await getMetricsForFamily(family)
 
         if (!metrics && src && !hasProtocol(src)) {
-          const file = join(nuxt.options.srcDir, nuxt.options.dir.public, src)
+          const file = join(nuxt.options.srcDir, fontRoot ?? options.root ?? nuxt.options.dir.public, src)
           metrics = await readMetrics(pathToFileURL(file))
         }
 
