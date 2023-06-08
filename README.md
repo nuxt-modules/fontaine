@@ -82,7 +82,7 @@ Nuxt will scan your `@font-face` rules and generate fallback rules with the corr
 }
 /* This will be generated. */
 @font-face {
-  font-family: 'Roboto override';
+  font-family: 'Roboto fallback';
   src: local('BlinkMacSystemFont'), local('Segoe UI'), local('Roboto'), local('Helvetica Neue'),
     local('Arial'), local('Noto Sans');
   ascent-override: 92.7734375%;
@@ -91,13 +91,13 @@ Nuxt will scan your `@font-face` rules and generate fallback rules with the corr
 }
 ```
 
-Then, whenever you use `font-family: 'Roboto'`, Nuxt will add the override to the font-family:
+Then, whenever you use `font-family: 'Roboto'`, Nuxt will add the fallback to the font-family:
 
 ```css
 :root {
   font-family: 'Roboto';
   /* This becomes */
-  font-family: 'Roboto', 'Roboto override';
+  font-family: 'Roboto', 'Roboto fallback';
 }
 ```
 
