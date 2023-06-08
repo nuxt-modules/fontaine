@@ -5,7 +5,7 @@
 [![Github Actions][github-actions-src]][github-actions-href]
 [![Codecov][codecov-src]][codecov-href]
 
-> Font metric override implementation for [Nuxt 3](https://v3.nuxtjs.org)
+> Font metric fallback implementation for [Nuxt 3](https://v3.nuxtjs.org)
 
 - [✨ &nbsp;Changelog](https://github.com/nuxt-modules/fontaine/blob/main/CHANGELOG.md)
 - [▶️ &nbsp;Online playground](https://stackblitz.com/github/nuxt-modules/fontaine/tree/main/playground)
@@ -15,7 +15,7 @@
 **⚠️ `@nuxtjs/fontaine` is under active development. ⚠️**
 
 - 💪 Reduces CLS by using local font fallbacks with crafted font metrics.
-- ✨ Generates font metrics and overrides automatically.
+- ✨ Generates font metrics and fallbacks automatically.
 - ⚡️ Pure CSS, zero runtime overhead.
 
 On the playground project, enabling/disabling this module makes the following differences rendering `/`, with no customisation required:
@@ -27,7 +27,7 @@ On the playground project, enabling/disabling this module makes the following di
 
 ## What's next
 
-For best performance, you will need to inline _all_ your CSS, not just the font-face override rules (which this module does automatically), or there will still be a layout shift when the stylesheet loads (which is why the number above is not zero).
+For best performance, you will need to inline _all_ your CSS, not just the font-face fallback rules (which this module does automatically), or there will still be a layout shift when the stylesheet loads (which is why the number above is not zero).
 
 [This PR](https://github.com/nuxt/framework/pull/7160) aims to bring that ability to Nuxt itself.
 

@@ -6,22 +6,22 @@ export default defineNuxtConfig({
       {
         family: 'Roboto',
         fallbacks: ['Zapfino'],
-        overrideName: 'fallback-a',
+        fallbackName: 'fallback-a',
       },
       {
         family: 'Roboto',
         fallbacks: ['Impact'],
-        overrideName: 'fallback-b',
+        fallbackName: 'fallback-b',
       },
       {
         family: 'Roboto',
         fallbacks: ['Georgia'],
-        overrideName: 'fallback-c',
+        fallbackName: 'fallback-c',
       },
       {
         family: 'Poppins',
         fallbacks: ['Georgia'],
-        overrideName: 'fallback-poppins',
+        fallbackName: 'fallback-poppins',
         src: 'poppins.ttf',
         root: 'assets',
       },

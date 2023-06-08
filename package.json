@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.4.2",
-    "fontaine": "^0.2.3",
+    "fontaine": "^0.4.0",
     "magic-string": "^0.30.0",
     "pathe": "^1.0.0",
     "ufo": "^1.0.0"

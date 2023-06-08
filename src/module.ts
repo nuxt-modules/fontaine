@@ -15,18 +15,18 @@ import { NitroTransformPlugin } from './nitro-plugin'
 import {
   FontaineTransform,
   generateFontFace,
-  generateOverrideName,
+  generateFallbackName,
   getMetricsForFamily,
   readMetrics,
 } from 'fontaine'
 
 interface CustomFont {
-  /** The font family name. This will be used to generate the override name and also to load cached metrics, if possible. */
+  /** The font family name. This will be used to generate the fallback name and also to load cached metrics, if possible. */
   family: string
   /** A file or web URL to inspect for font metrics. */
   src?: string
   /** If you want to customise the overridden name. In most cases it should not be overridden. */
-  overrideName?: string
+  fallbackName?: string
   /** If you want to customise the fallbacks on a per-font basis. */
   fallbacks?: string[]
   /** If you want to customise font directory. Default is Nuxt public directory. */
@@ -34,13 +34,13 @@ interface CustomFont {
 }
 
 export interface ModuleOptions {
-  /** Set to `false` to disable automatic injection of overrides. */
+  /** Set to `false` to disable automatic injection of fallbacks. */
   inject: boolean
   /** Set to `false` to disable inlining of font-face rules. */
   inline: boolean
   /** An array of local fonts to display as a fallback. */
   fallbacks: string[]
-  /** Fonts to generate override declarations for. This is only necessary if you do not have `@font-face` declarations for them in your CSS. */
+  /** Fonts to generate fallback declarations for. This is only necessary if you do not have `@font-face` declarations for them in your CSS. */
   fonts: Array<string | CustomFont>
   /** If you want to customise directory for all fonts. Default is Nuxt public directory. */
   root?: string
@@ -74,7 +74,7 @@ export default defineNuxtModule<ModuleOptions>({
     const css = (async () => {
       let css = ''
       for (const font of options.fonts) {
-        const { family, src, overrideName, fallbacks, root: fontRoot } =
+        const { family, src, fallbackName, fallbacks, root: fontRoot } =
           typeof font === 'string' ? ({ family: font } as CustomFont) : font
 
         let metrics = await getMetricsForFamily(family)
@@ -89,10 +89,14 @@ export default defineNuxtModule<ModuleOptions>({
           continue
         }
 
-        css += generateFontFace(metrics, {
-          name: overrideName || generateOverrideName(family),
-          fallbacks: fallbacks || options.fallbacks,
-        })
+        for (const font of fallbacks || options.fallbacks) {
+          css += generateFontFace(metrics, {
+            name: fallbackName || generateFallbackName(family),
+            font,
+            metrics: (await getMetricsForFamily(font))!
+          })
+        }
+
       }
       return css
     })()
@@ -110,6 +114,14 @@ export default defineNuxtModule<ModuleOptions>({
         fallbacks: options.fallbacks,
         resolvePath,
         css: cssContext,
+        skipFontFaceGeneration: (fallbackName: string) => {
+          return options.inline && options.fonts.some(font => {
+            const previouslyGeneratedFallbackName = typeof font === 'string'
+              ? generateFallbackName(font)
+              : (font.fallbackName || generateFallbackName(font.family))
+            return previouslyGeneratedFallbackName === fallbackName
+          })
+        },
         sourcemap: nuxt.options.sourcemap.client,
       }
       addVitePlugin(FontaineTransform.vite(transformOptions), { server: false })
@@ -128,7 +140,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     if (options.inline) {
       addPluginTemplate({
-        filename: 'font-override-inlining-plugin.server.ts',
+        filename: 'font-fallback-inlining-plugin.server.ts',
         getContents: async () =>
           [
             `import { defineNuxtPlugin, useHead } from '#imports'`,
@@ -140,11 +152,11 @@ export default defineNuxtModule<ModuleOptions>({
       })
     } else {
       addTemplate({
-        filename: 'font-overrides.css',
+        filename: 'font-fallbacks.css',
         write: true,
         getContents: () => css,
       })
-      nuxt.options.css.push('#build/font-overrides.css')
+      nuxt.options.css.push('#build/font-fallbacks.css')
     }
   },
 })
