@@ -51,8 +51,8 @@ export default defineNuxtModule<ModuleOptions>({
     configKey: 'fontMetrics',
     name: '@nuxtjs/fontaine',
     compatibility: {
-      nuxt: '^3.0.0-rc.6'
-    }
+      nuxt: '^3.0.0-rc.6',
+    },
   },
   defaults: nuxt => ({
     inject: true,
@@ -60,7 +60,7 @@ export default defineNuxtModule<ModuleOptions>({
     fallbacks: ['BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans'],
     fonts: [],
   }),
-  async setup (options, nuxt) {
+  async setup(options, nuxt) {
     // Skip when preparing
     if (nuxt.options._prepare) return
 
@@ -74,13 +74,22 @@ export default defineNuxtModule<ModuleOptions>({
     const css = (async () => {
       let css = ''
       for (const font of options.fonts) {
-        const { family, src, fallbackName, fallbacks, root: fontRoot } =
-          typeof font === 'string' ? ({ family: font } as CustomFont) : font
+        const {
+          family,
+          src,
+          fallbackName,
+          fallbacks,
+          root: fontRoot,
+        } = typeof font === 'string' ? ({ family: font } as CustomFont) : font
 
         let metrics = await getMetricsForFamily(family)
 
         if (!metrics && src && !hasProtocol(src)) {
-          const file = join(nuxt.options.srcDir, fontRoot ?? options.root ?? nuxt.options.dir.public, src)
+          const file = join(
+            nuxt.options.srcDir,
+            fontRoot ?? options.root ?? nuxt.options.dir.public,
+            src
+          )
           metrics = await readMetrics(pathToFileURL(file))
         }
 
@@ -93,10 +102,9 @@ export default defineNuxtModule<ModuleOptions>({
           css += generateFontFace(metrics, {
             name: fallbackName || generateFallbackName(family),
             font,
-            metrics: (await getMetricsForFamily(font))!
+            metrics: (await getMetricsForFamily(font))!,
           })
         }
-
       }
       return css
     })()
@@ -115,18 +123,22 @@ export default defineNuxtModule<ModuleOptions>({
         resolvePath,
         css: cssContext,
         skipFontFaceGeneration: (fallbackName: string) => {
-          return options.inline && options.fonts.some(font => {
-            const previouslyGeneratedFallbackName = typeof font === 'string'
-              ? generateFallbackName(font)
-              : (font.fallbackName || generateFallbackName(font.family))
-            return previouslyGeneratedFallbackName === fallbackName
-          })
+          return (
+            options.inline &&
+            options.fonts.some(font => {
+              const previouslyGeneratedFallbackName =
+                typeof font === 'string'
+                  ? generateFallbackName(font)
+                  : font.fallbackName || generateFallbackName(font.family)
+              return previouslyGeneratedFallbackName === fallbackName
+            })
+          )
         },
         sourcemap: nuxt.options.sourcemap.client,
       }
       addVitePlugin(FontaineTransform.vite(transformOptions), { server: false })
       addWebpackPlugin(FontaineTransform.webpack(transformOptions), { server: false })
-      nuxt.hook('nitro:config', async (config) => {
+      nuxt.hook('nitro:config', async config => {
         const plugins = await config.rollupConfig!.plugins
         if (!plugins || !Array.isArray(plugins)) return
         plugins.push(
@@ -145,7 +157,8 @@ export default defineNuxtModule<ModuleOptions>({
           [
             `import { defineNuxtPlugin, useHead } from '#imports'`,
             `const css = \`${(await css).replace(/\s+/g, ' ')}\``,
-            `export default defineNuxtPlugin(() => { useHead({ style: [{ children: css ${!nuxt.options.dev && options.inject ? '+ __INLINED_CSS__ ' : ''
+            `export default defineNuxtPlugin(() => { useHead({ style: [{ children: css ${
+              !nuxt.options.dev && options.inject ? '+ __INLINED_CSS__ ' : ''
             }}] }) })`,
           ].join('\n'),
         mode: 'server',
