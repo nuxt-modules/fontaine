@@ -55,8 +55,8 @@ importers:
         specifier: 7.14.0
         version: 7.14.0
       conventional-changelog-conventionalcommits:
-        specifier: 6.0.0
-        version: 6.0.0
+        specifier: 6.1.0
+        version: 6.1.0
       eslint:
         specifier: 8.43.0
         version: 8.43.0
@@ -2316,8 +2316,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /conventional-changelog-conventionalcommits@6.0.0:
-    resolution: {integrity: sha512-pOQWvJ2se8UmGj3Vz5NzhljdgHvGow6ATZ7pM0TZqGekAfwgJkr3YQ9ZbooB4VIh35KS/cpfIgVrLoqLNvFNYg==}
+  /conventional-changelog-conventionalcommits@6.1.0:
+    resolution: {integrity: sha512-3cS3GEtR78zTfMzk0AizXKKIdN4OvSh7ibNz6/DPbhWWQu7LqE/8+/GqSodV+sywUR2gpJAdP/1JFf4XtN7Zpw==}
     engines: {node: '>=14'}
     dependencies:
       compare-func: 2.0.0
