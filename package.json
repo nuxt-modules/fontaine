@@ -19,13 +19,14 @@
   "type": "module",
   "exports": {
     ".": {
+      "types": "./dist/types.d.ts",
       "import": "./dist/module.mjs",
       "require": "./dist/module.cjs"
     },
     "./transform": {
+      "types": "./dist/transform.d.ts",
       "import": "./dist/transform.mjs",
-      "require": "./dist/transform.cjs",
-      "types": "./dist/transform.d.ts"
+      "require": "./dist/transform.cjs"
     }
   },
   "main": "./dist/module.cjs",
