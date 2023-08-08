@@ -88,5 +88,5 @@
     "@nuxtjs/fontaine": "link:.",
     "@nuxt/kit": "3.6.2"
   },
-  "packageManager": "pnpm@8.6.11"
+  "packageManager": "pnpm@8.6.12"
 }
