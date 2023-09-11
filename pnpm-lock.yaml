@@ -68,8 +68,8 @@ importers:
         specifier: 0.16.0
         version: 0.16.0
       get-port-please:
-        specifier: 3.0.1
-        version: 3.0.1
+        specifier: 3.1.1
+        version: 3.1.1
       husky:
         specifier: 8.0.3
         version: 8.0.3
@@ -1081,7 +1081,7 @@ packages:
       consola: 3.2.3
       defu: 6.1.2
       execa: 7.2.0
-      get-port-please: 3.0.1
+      get-port-please: 3.1.1
       ofetch: 1.1.1
       pathe: 1.1.1
       ufo: 1.2.0
@@ -1116,7 +1116,7 @@ packages:
       estree-walker: 3.0.3
       externality: 1.0.2
       fs-extra: 11.1.1
-      get-port-please: 3.0.1
+      get-port-please: 3.1.1
       h3: 1.7.1
       knitwork: 1.0.0
       magic-string: 0.30.2
@@ -3913,8 +3913,8 @@ packages:
       has-symbols: 1.0.3
     dev: true
 
-  /get-port-please@3.0.1:
-    resolution: {integrity: sha512-R5pcVO8Z1+pVDu8Ml3xaJCEkBiiy1VQN9za0YqH8GIi1nIqD4IzQhzY6dDzMRtdS1lyiGlucRzm8IN8wtLIXng==}
+  /get-port-please@3.1.1:
+    resolution: {integrity: sha512-3UBAyM3u4ZBVYDsxOQfJDxEa6XTbpBDrOjp4mf7ExFRt5BKs/QywQQiJsh2B+hxcZLSapWqCRvElUe8DnKcFHA==}
     dev: true
 
   /get-stream@6.0.1:
@@ -4662,7 +4662,7 @@ packages:
       clipboardy: 3.0.0
       consola: 3.2.3
       defu: 6.1.2
-      get-port-please: 3.0.1
+      get-port-please: 3.1.1
       h3: 1.8.0-rc.3
       http-shutdown: 1.2.2
       jiti: 1.19.1
