@@ -69,6 +69,25 @@ export default defineNuxtConfig({
 
 That's it!
 
+### Tailwind CSS
+
+If you use Tailwind CSS and use your custom font via the config file, you will need to manually add the fallback font.
+
+```ts
+import type { Config } from 'tailwindcss'
+import { fontFamily } from 'tailwindcss/defaultTheme'
+
+export default <Partial<Config>> {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Roboto', 'Roboto fallback', ...fontFamily.sans],
+      },
+    },
+  },
+}
+```
+
 ## How it works
 
 Nuxt will scan your `@font-face` rules and generate fallback rules with the correct metrics. For example:
