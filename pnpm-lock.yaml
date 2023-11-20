@@ -44,8 +44,8 @@ importers:
         specifier: 18.18.8
         version: 18.18.8
       '@types/serve-handler':
-        specifier: 6.1.3
-        version: 6.1.3
+        specifier: 6.1.4
+        version: 6.1.4
       '@vitest/coverage-v8':
         specifier: 0.34.6
         version: 0.34.6(vitest@0.34.6)
@@ -1796,8 +1796,8 @@ packages:
     resolution: {integrity: sha512-OxepLK9EuNEIPxWNME+C6WwbRAOOI2o2BaQEGzz5Lu2e4Z5eDnEo+/aVEDMIXywoJitJ7xWd641wrGLZdtwRyw==}
     dev: true
 
-  /@types/serve-handler@6.1.3:
-    resolution: {integrity: sha512-mvboyl5x5LsPPsjntm/BK/EZZqbOCITqNjOVOkl/bbB97yVmIUIyOP7+OjNj/9Iuh6hCH6RYuugPuO4avlPWcg==}
+  /@types/serve-handler@6.1.4:
+    resolution: {integrity: sha512-aXy58tNie0NkuSCY291xUxl0X+kGYy986l4kqW6Gi4kEXgr6Tx0fpSH7YwUSa5usPpG3s9DBeIR6hHcDtL2IvQ==}
     dependencies:
       '@types/node': 18.18.8
     dev: true
