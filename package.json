@@ -79,6 +79,7 @@
     "lint-staged": "15.0.2",
     "nuxt": "3.8.2",
     "prettier": "3.0.3",
+    "rollup": "^4.5.0",
     "serve-handler": "6.1.5",
     "typescript": "5.1.6",
     "vitest": "0.34.6",

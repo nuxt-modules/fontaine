@@ -134,7 +134,7 @@ export default defineNuxtModule<ModuleOptions>({
             })
           )
         },
-        sourcemap: nuxt.options.sourcemap.client,
+        sourcemap: !!nuxt.options.sourcemap.client,
       }
       addVitePlugin(FontaineTransform.vite(transformOptions), { server: false })
       addWebpackPlugin(FontaineTransform.webpack(transformOptions), { server: false })
