@@ -157,7 +157,7 @@ export default defineNuxtModule<ModuleOptions>({
           [
             `import { defineNuxtPlugin, useHead } from '#imports'`,
             `const css = \`${(await css).replace(/\s+/g, ' ')}\``,
-            `export default defineNuxtPlugin(() => { useHead({ style: [{ children: css ${
+            `export default defineNuxtPlugin(() => { useHead({ style: [{ innerHTML: css ${
               !nuxt.options.dev && options.inject ? '+ __INLINED_CSS__ ' : ''
             }}] }) })`,
           ].join('\n'),
