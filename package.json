@@ -83,7 +83,7 @@
     "serve-handler": "6.1.5",
     "typescript": "5.1.6",
     "vitest": "0.34.6",
-    "vue": "3.3.8"
+    "vue": "3.3.9"
   },
   "resolutions": {
     "@nuxtjs/fontaine": "link:.",
