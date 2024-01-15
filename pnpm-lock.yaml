@@ -68,8 +68,8 @@ importers:
         specifier: 0.17.3
         version: 0.17.3
       get-port-please:
-        specifier: 3.1.1
-        version: 3.1.1
+        specifier: 3.1.2
+        version: 3.1.2
       husky:
         specifier: 8.0.3
         version: 8.0.3
@@ -1390,7 +1390,7 @@ packages:
       execa: 7.2.0
       fast-glob: 3.3.2
       flatted: 3.2.9
-      get-port-please: 3.1.1
+      get-port-please: 3.1.2
       h3: 1.9.0
       hookable: 5.5.3
       image-meta: 0.2.0
@@ -1574,7 +1574,7 @@ packages:
       estree-walker: 3.0.3
       execa: 8.0.1
       fake-indexeddb: 5.0.1
-      get-port-please: 3.1.1
+      get-port-please: 3.1.2
       h3: 1.9.0
       local-pkg: 0.5.0
       magic-string: 0.30.5
@@ -1621,7 +1621,7 @@ packages:
       estree-walker: 3.0.3
       externality: 1.0.2
       fs-extra: 11.2.0
-      get-port-please: 3.1.1
+      get-port-please: 3.1.2
       h3: 1.9.0
       knitwork: 1.0.0
       magic-string: 0.30.5
@@ -4977,8 +4977,8 @@ packages:
       has-symbols: 1.0.3
     dev: true
 
-  /get-port-please@3.1.1:
-    resolution: {integrity: sha512-3UBAyM3u4ZBVYDsxOQfJDxEa6XTbpBDrOjp4mf7ExFRt5BKs/QywQQiJsh2B+hxcZLSapWqCRvElUe8DnKcFHA==}
+  /get-port-please@3.1.2:
+    resolution: {integrity: sha512-Gxc29eLs1fbn6LQ4jSU4vXjlwyZhF5HsGuMAa7gqBP4Rw4yxxltyDUuF5MBclFzDTXO+ACchGQoeela4DSfzdQ==}
     dev: true
 
   /get-stream@6.0.1:
@@ -5860,7 +5860,7 @@ packages:
       clipboardy: 3.0.0
       consola: 3.2.3
       defu: 6.1.3
-      get-port-please: 3.1.1
+      get-port-please: 3.1.2
       h3: 1.9.0
       http-shutdown: 1.2.2
       jiti: 1.21.0
