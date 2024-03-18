@@ -67,7 +67,7 @@
     "@nuxtjs/eslint-config-typescript": "12.1.0",
     "@types/node": "20.11.24",
     "@types/serve-handler": "6.1.4",
-    "@vitest/coverage-v8": "1.1.0",
+    "@vitest/coverage-v8": "1.4.0",
     "bumpp": "9.3.0",
     "conventional-changelog-conventionalcommits": "7.0.2",
     "eslint": "8.56.0",
@@ -82,7 +82,7 @@
     "rollup": "4.5.0",
     "serve-handler": "6.1.5",
     "typescript": "5.1.6",
-    "vitest": "1.1.0",
+    "vitest": "1.4.0",
     "vue": "3.3.13"
   },
   "resolutions": {
