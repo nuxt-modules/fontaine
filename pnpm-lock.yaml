@@ -50,8 +50,8 @@ importers:
         specifier: 1.1.0
         version: 1.1.0(vitest@1.1.0)
       bumpp:
-        specifier: 9.3.0
-        version: 9.3.0
+        specifier: 9.4.0
+        version: 9.4.0
       conventional-changelog-conventionalcommits:
         specifier: 7.0.2
         version: 7.0.2
@@ -3170,7 +3170,6 @@ packages:
     resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
-    dev: true
 
   /agent-base@6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
@@ -3392,7 +3391,7 @@ packages:
     dependencies:
       '@babel/parser': 7.23.5
       '@rollup/pluginutils': 5.0.5(rollup@4.5.0)
-      pathe: 1.1.1
+      pathe: 1.1.2
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -3403,7 +3402,7 @@ packages:
     dependencies:
       '@babel/parser': 7.23.5
       '@rollup/pluginutils': 5.0.5(rollup@4.5.0)
-      pathe: 1.1.1
+      pathe: 1.1.2
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -3547,18 +3546,19 @@ packages:
       semver: 7.5.4
     dev: true
 
-  /bumpp@9.3.0:
-    resolution: {integrity: sha512-P46VikoEZadYCqx7mbClKlaJnOyvc+JfRJPRf1YwlOjwqeYmutgFe1w9hvfXe819VhpU0N0TNXtxyVAUlAgaNA==}
+  /bumpp@9.4.0:
+    resolution: {integrity: sha512-T+N+B5mSSvsTt7kgxGXCKQd957IxmEZwMn2nWirspGUY08u/cBNrpQDMXk43fzLegZtKtXS1v9S06vq2zf6lXQ==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
       '@jsdevtools/ez-spawn': 3.0.4
       c12: 1.9.0
       cac: 6.7.14
+      escalade: 3.1.2
       fast-glob: 3.3.2
       js-yaml: 4.1.0
       prompts: 2.4.2
-      semver: 7.5.4
+      semver: 7.6.0
     dev: true
 
   /bundle-name@3.0.0:
@@ -4185,10 +4185,10 @@ packages:
 
   /destr@2.0.2:
     resolution: {integrity: sha512-65AlobnZMiCET00KaFFjUefxDX0khFA/E4myqZ7a6Sq1yZtR8+FVIvilVX66vF2uobSumxooYZChiRPCKNqhmg==}
+    dev: true
 
   /destr@2.0.3:
     resolution: {integrity: sha512-2N3BOUU4gYMpTP24s5rF5iP7BDr7uNTCs4ozw3kf/eKfvWSIu93GEBi5m427YoyJoeOzQ5smuu4nNAPGb8idSQ==}
-    dev: true
 
   /destroy@1.2.0:
     resolution: {integrity: sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==}
@@ -4561,6 +4561,11 @@ packages:
   /escalade@3.1.1:
     resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
     engines: {node: '>=6'}
+
+  /escalade@3.1.2:
+    resolution: {integrity: sha512-ErCHMCae19vR8vQGe50xIsVomy19rg6gFu3+r3jkEO46suLMWBksvVyoGgQV+jOfl84ZSOSlmv6Gxa89PmTGmA==}
+    engines: {node: '>=6'}
+    dev: true
 
   /escape-html@1.0.3:
     resolution: {integrity: sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==}
@@ -6313,9 +6318,9 @@ packages:
     dependencies:
       estree-walker: 3.0.3
       magic-string: 0.30.7
-      mlly: 1.4.2
+      mlly: 1.6.0
       type-level-regexp: 0.1.17
-      ufo: 1.3.2
+      ufo: 1.5.1
       unplugin: 1.5.1
     dev: false
 
@@ -6576,8 +6581,7 @@ packages:
       acorn: 8.11.3
       pathe: 1.1.2
       pkg-types: 1.0.3
-      ufo: 1.3.2
-    dev: true
+      ufo: 1.5.1
 
   /mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
@@ -7802,7 +7806,7 @@ packages:
     resolution: {integrity: sha512-lNeOl38Ws0eNxpO3+wD1I9rkHGQyj1NU1jlzv4go2CtEnEQEUfqnIvZG7W+bC/aXdJ27n5x/yUjb6RoT9tko+Q==}
     dependencies:
       defu: 6.1.4
-      destr: 2.0.2
+      destr: 2.0.3
       flat: 5.0.2
 
   /react-is@18.2.0:
@@ -8138,6 +8142,14 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+
+  /semver@7.6.0:
+    resolution: {integrity: sha512-EnwXhrlwXMk9gKu5/flx5sv/an57AkRplG3hTK68W7FRDN+k+OWBj65M7719OkA82XLBxrcX0KSHj+X5COhOVg==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      lru-cache: 6.0.0
+    dev: true
 
   /send@0.18.0:
     resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==}
@@ -8633,7 +8645,7 @@ packages:
     hasBin: true
     dependencies:
       '@jridgewell/source-map': 0.3.5
-      acorn: 8.11.2
+      acorn: 8.11.3
       commander: 2.20.3
       source-map-support: 0.5.21
     dev: true
@@ -8823,7 +8835,6 @@ packages:
 
   /ufo@1.5.1:
     resolution: {integrity: sha512-HGyF79+/qZ4soRvM+nHERR2pJ3VXDZ/8sL1uLahdgEDf580NkgiWOxLk33FetExqOWp352JZRsgXbG/4MaGOSg==}
-    dev: true
 
   /ultrahtml@1.5.2:
     resolution: {integrity: sha512-qh4mBffhlkiXwDAOxvSGxhL0QEQsTbnP9BozOK3OYPEGvPvdWzvAUaXNtUSMdNsKDtuyjEbyVUPFZ52SSLhLqw==}
