@@ -33,22 +33,8 @@ For best performance, you will need to inline _all_ your CSS, not just the font-
 
 ## Installation
 
-With `pnpm`
-
 ```bash
-pnpm add -D @nuxtjs/fontaine
-```
-
-Or, with `npm`
-
-```bash
-npm install -D @nuxtjs/fontaine
-```
-
-Or, with `yarn`
-
-```bash
-yarn add -D @nuxtjs/fontaine
+npx nuxi@latest module add fontaine
 ```
 
 ## Usage
