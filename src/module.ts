@@ -65,8 +65,8 @@ export default defineNuxtModule<ModuleOptions>({
     if (nuxt.options._prepare) return
 
     // Allow fully overriding default fallbacks
-    if ((nuxt.options as any).fontMetrics?.fallbacks) {
-      options.fallbacks = (nuxt.options as any).fontMetrics?.fallbacks
+    if (nuxt.options.fontMetrics?.fallbacks) {
+      options.fallbacks = nuxt.options.fontMetrics?.fallbacks
     }
 
     const logger = useLogger('@nuxtjs/fontaine')
