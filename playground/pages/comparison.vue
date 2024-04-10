@@ -1,8 +1,12 @@
 <template>
   <div>
-    <NuxtLink to="/">Back to home page</NuxtLink>
-    <NuxtLink to="https://overrides-only-demo.glitch.me/">Original demo</NuxtLink>
-    <hr />
+    <NuxtLink to="/">
+      Back to home page
+    </NuxtLink>
+    <NuxtLink to="https://overrides-only-demo.glitch.me/">
+      Original demo
+    </NuxtLink>
+    <hr>
     <p>This page demonstrates the usage of font metric overrides.</p>
     <p>
       Different local fonts (Zapfino, Impact, and Georgia), all using the same font metric
@@ -14,7 +18,10 @@
     </p>
     <p>
       If you don't have these local fonts installed, this
-      <a href="/overrides.png" target="_blank">screenshot</a>
+      <a
+        href="/overrides.png"
+        target="_blank"
+      >screenshot</a>
       shows what this demo would look like if you did.
     </p>
     <div class="example">
@@ -25,19 +32,24 @@
       <div class="layered">
         <div><span class="webfont">Lorum Ipsum</span></div>
         <div>
-          <span class="fallback" style="font-family: fallback-a">Lorum Ipsum</span>
+          <span
+            class="fallback"
+            style="font-family: fallback-a"
+          >Lorum Ipsum</span>
         </div>
       </div>
     </div>
     <div class="example">
       <code>
         @font-face { font-family: fallback-b; src: local("Impact"); ascent-override: 92.7734375%;
-        descent-override: 24.4140625%; linegap-override: 0%; }</code
-      >
+        descent-override: 24.4140625%; linegap-override: 0%; }</code>
       <div class="layered">
         <div><span class="webfont">Lorum Ipsum</span></div>
         <div>
-          <span class="fallback" style="font-family: fallback-b">Lorum Ipsum</span>
+          <span
+            class="fallback"
+            style="font-family: fallback-b"
+          >Lorum Ipsum</span>
         </div>
       </div>
     </div>
@@ -49,7 +61,10 @@
       <div class="layered">
         <div><span class="webfont">abcdefghijklmnopqrstuvwxyz</span></div>
         <div>
-          <span class="fallback" style="font-family: fallback-c">abcdefghijklmnopqrstuvwxyz</span>
+          <span
+            class="fallback"
+            style="font-family: fallback-c"
+          >abcdefghijklmnopqrstuvwxyz</span>
         </div>
       </div>
     </div>
@@ -59,7 +74,10 @@
       <div class="layered">
         <div><span class="webfont">Lorum Ipsum</span></div>
         <div>
-          <span class="fallback" style="font-family: Zapfino">Lorum Ipsum</span>
+          <span
+            class="fallback"
+            style="font-family: Zapfino"
+          >Lorum Ipsum</span>
         </div>
       </div>
     </div>
@@ -67,7 +85,10 @@
       <div class="layered">
         <div><span class="webfont">Lorum Ipsum</span></div>
         <div>
-          <span class="fallback" style="font-family: Impact">Lorum Ipsum</span>
+          <span
+            class="fallback"
+            style="font-family: Impact"
+          >Lorum Ipsum</span>
         </div>
       </div>
     </div>
@@ -75,11 +96,17 @@
       <div class="layered">
         <div><span class="webfont">Lorum Ipsum</span></div>
         <div>
-          <span class="fallback" style="font-family: Georgia">Lorum Ipsum</span>
+          <span
+            class="fallback"
+            style="font-family: Georgia"
+          >Lorum Ipsum</span>
         </div>
       </div>
     </div>
-    <Link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet" />
+    <Link
+      href="https://fonts.googleapis.com/css2?family=Roboto"
+      rel="stylesheet"
+    />
   </div>
 </template>
 

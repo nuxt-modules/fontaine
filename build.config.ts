@@ -4,5 +4,5 @@ export default defineBuildConfig({
   rollup: { emitCJS: true },
   // TODO: fix in unbuild
   externals: ['node:url', 'node:path'],
-  entries: ['./src/transform']
+  entries: ['./src/transform'],
 })
