@@ -25,6 +25,6 @@ export default defineNuxtConfig({
         src: 'poppins.ttf',
         root: 'assets',
       },
-    ]
-  }
+    ],
+  },
 })

@@ -19,8 +19,10 @@
       Mollit laborum cupidatat nisi commodo enim eiusmod sit. Est dolor ipsum nulla pariatur
       pariatur esse ea est labore fugiat eu velit. Minim ex sunt Lorem nisi non officia.
     </p>
-    <hr />
-    <NuxtLink to="/comparison">Comparison of using font-metric based overrides</NuxtLink>
+    <hr>
+    <NuxtLink to="/comparison">
+      Comparison of using font-metric based overrides
+    </NuxtLink>
   </div>
 </template>
 

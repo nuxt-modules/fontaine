@@ -11,7 +11,6 @@ import {
 } from '@nuxt/kit'
 import { join } from 'pathe'
 import { hasProtocol } from 'ufo'
-import { NitroTransformPlugin } from './nitro-plugin'
 import {
   FontaineTransform,
   generateFontFace,
@@ -19,6 +18,7 @@ import {
   getMetricsForFamily,
   readMetrics,
 } from 'fontaine'
+import { NitroTransformPlugin } from './nitro-plugin'
 
 interface CustomFont {
   /** The font family name. This will be used to generate the fallback name and also to load cached metrics, if possible. */
@@ -65,7 +65,9 @@ export default defineNuxtModule<ModuleOptions>({
     if (nuxt.options._prepare) return
 
     // Allow fully overriding default fallbacks
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     if ((nuxt.options as any).fontMetrics?.fallbacks) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       options.fallbacks = (nuxt.options as any).fontMetrics?.fallbacks
     }
 
@@ -88,7 +90,7 @@ export default defineNuxtModule<ModuleOptions>({
           const file = join(
             nuxt.options.srcDir,
             fontRoot ?? options.root ?? nuxt.options.dir.public,
-            src
+            src,
           )
           metrics = await readMetrics(pathToFileURL(file))
         }
@@ -124,10 +126,10 @@ export default defineNuxtModule<ModuleOptions>({
         css: cssContext,
         skipFontFaceGeneration: (fallbackName: string) => {
           return (
-            options.inline &&
-            options.fonts.some(font => {
-              const previouslyGeneratedFallbackName =
-                typeof font === 'string'
+            options.inline
+            && options.fonts.some((font) => {
+              const previouslyGeneratedFallbackName
+                = typeof font === 'string'
                   ? generateFallbackName(font)
                   : font.fallbackName || generateFallbackName(font.family)
               return previouslyGeneratedFallbackName === fallbackName
@@ -138,14 +140,14 @@ export default defineNuxtModule<ModuleOptions>({
       }
       addVitePlugin(FontaineTransform.vite(transformOptions), { server: false })
       addWebpackPlugin(FontaineTransform.webpack(transformOptions), { server: false })
-      nuxt.hook('nitro:config', async config => {
+      nuxt.hook('nitro:config', async (config) => {
         const plugins = await config.rollupConfig!.plugins
         if (!plugins || !Array.isArray(plugins)) return
         plugins.push(
           NitroTransformPlugin({
             sourcemap: true,
             cssContext,
-          })
+          }),
         )
       })
     }
@@ -163,7 +165,8 @@ export default defineNuxtModule<ModuleOptions>({
           ].join('\n'),
         mode: 'server',
       })
-    } else {
+    }
+    else {
       addTemplate({
         filename: 'font-fallbacks.css',
         write: true,
