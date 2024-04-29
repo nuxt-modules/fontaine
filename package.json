@@ -2,7 +2,10 @@
   "name": "@nuxtjs/fontaine",
   "version": "0.4.1",
   "license": "MIT",
-  "repository": "nuxt-modules/fontaine",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuxt-modules/fontaine.git"
+  },
   "keywords": [
     "nuxt",
     "module",
