@@ -81,7 +81,7 @@
     "typescript": "5.1.6",
     "vitest": "1.1.0",
     "vue": "3.3.13",
-    "@nuxt/eslint-config": "0.3.5"
+    "@nuxt/eslint-config": "0.3.10"
   },
   "resolutions": {
     "@nuxtjs/fontaine": "link:.",
