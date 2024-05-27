@@ -69,7 +69,7 @@
     "@types/serve-handler": "6.1.4",
     "@vitest/coverage-v8": "1.1.0",
     "bumpp": "9.4.1",
-    "conventional-changelog-conventionalcommits": "7.0.2",
+    "conventional-changelog-conventionalcommits": "8.0.0",
     "eslint": "9.0.0",
     "expect-type": "0.17.3",
     "get-port-please": "3.1.2",
