@@ -9,7 +9,7 @@ import {
   defineNuxtModule,
   useLogger,
 } from '@nuxt/kit'
-import { join } from 'pathe'
+import { resolve } from 'pathe'
 import { hasProtocol } from 'ufo'
 import {
   FontaineTransform,
@@ -87,7 +87,7 @@ export default defineNuxtModule<ModuleOptions>({
         let metrics = await getMetricsForFamily(family)
 
         if (!metrics && src && !hasProtocol(src)) {
-          const file = join(
+          const file = resolve(
             nuxt.options.srcDir,
             fontRoot ?? options.root ?? nuxt.options.dir.public,
             src,
@@ -117,7 +117,7 @@ export default defineNuxtModule<ModuleOptions>({
       const resolvePath = (id: string) => {
         if (hasProtocol(id)) return id
         if (isAbsolute(id))
-          return pathToFileURL(join(nuxt.options.srcDir, nuxt.options.dir.public, id))
+          return pathToFileURL(resolve(nuxt.options.srcDir, nuxt.options.dir.public, id))
         return pathToFileURL(resolveAlias(id))
       }
       const transformOptions = {
