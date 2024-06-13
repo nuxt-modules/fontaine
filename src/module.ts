@@ -10,7 +10,7 @@ import {
   useLogger,
 } from '@nuxt/kit'
 import { resolve } from 'pathe'
-import { hasProtocol } from 'ufo'
+import { hasProtocol, withoutLeadingSlash } from 'ufo'
 import {
   FontaineTransform,
   generateFontFace,
@@ -117,7 +117,7 @@ export default defineNuxtModule<ModuleOptions>({
       const resolvePath = (id: string) => {
         if (hasProtocol(id)) return id
         if (isAbsolute(id))
-          return pathToFileURL(resolve(nuxt.options.srcDir, nuxt.options.dir.public, id))
+          return pathToFileURL(resolve(nuxt.options.srcDir, nuxt.options.dir.public, withoutLeadingSlash(id)))
         return pathToFileURL(resolveAlias(id))
       }
       const transformOptions = {
