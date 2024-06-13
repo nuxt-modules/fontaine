@@ -38,10 +38,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "pnpm dev:prepare && nuxt-module-build",
+    "build": "pnpm dev:prepare && nuxt-module-build build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
-    "dev:prepare": "pnpm nuxt-module-build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "dev:prepare": "pnpm nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
     "docs:dev": "nuxi dev docs",
     "docs:build": "nuxi generate docs",
     "lint": "pnpm lint:all:eslint",
