@@ -81,7 +81,7 @@
     "serve-handler": "6.1.5",
     "typescript": "5.1.6",
     "vitest": "1.1.0",
-    "vue": "3.3.13"
+    "vue": "3.4.27"
   },
   "resolutions": {
     "@nuxt/kit": "3.12.1",
