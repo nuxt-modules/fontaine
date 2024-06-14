@@ -51,7 +51,7 @@ export default defineNuxtModule<ModuleOptions>({
     configKey: 'fontMetrics',
     name: '@nuxtjs/fontaine',
     compatibility: {
-      nuxt: '^3.0.0-rc.6',
+      nuxt: '>=3.0.0-rc.6',
     },
   },
   defaults: nuxt => ({
