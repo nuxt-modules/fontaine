@@ -113,7 +113,7 @@ The core of this module will work outside of Nuxt, and has been separated into a
 ## 💻 Development
 
 - Clone this repository
-- Enable [Corepack](https://github.com/nodejs/corepack) using `corepack enable` (use `npm i -g corepack` for Node.js < 16.10)
+- Enable [Corepack](https://github.com/nodejs/corepack) using `corepack enable`
 - Install dependencies using `pnpm install`
 - Stub module with `pnpm dev:prepare`
 - Run `pnpm dev` to start [playground](./playground) in development mode
