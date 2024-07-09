@@ -66,7 +66,7 @@
     "@nuxt/module-builder": "0.8.1",
     "@nuxt/schema": "3.12.3",
     "@nuxt/test-utils": "3.13.1",
-    "@types/node": "20.14.9",
+    "@types/node": "20.14.10",
     "@types/serve-handler": "6.1.4",
     "@vitest/coverage-v8": "1.6.0",
     "bumpp": "9.4.1",
