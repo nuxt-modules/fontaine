@@ -137,7 +137,7 @@ Published under the [MIT License](./LICENCE).
 [npm-version-href]: https://npmjs.com/package/@nuxtjs/fontaine
 [npm-downloads-src]: https://img.shields.io/npm/dm/@nuxtjs/fontaine?style=flat-square
 [npm-downloads-href]: https://npm.chart.dev/@nuxtjs/fontaine
-[github-actions-src]: https:
+[github-actions-src]: https://img.shields.io/github/workflow/status/nuxt-modules/fontaine/ci/main?style=flat-square
 [github-actions-href]: https://github.com/nuxt-modules/fontaine/actions?query=workflow%3Aci
 [codecov-src]: https://img.shields.io/codecov/c/gh/nuxt-modules/fontaine/main?style=flat-square
 [codecov-href]: https://codecov.io/gh/nuxt-modules/fontaine
