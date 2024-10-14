@@ -51,7 +51,7 @@
     "prepare": "husky install",
     "prepublishOnly": "pnpm lint && pnpm test",
     "release": "bumpp && npm publish",
-    "test": "vitest run",
+    "test": "vitest run --coverage",
     "test:types": "tsc --noEmit"
   },
   "dependencies": {
