@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
-  compatibilityDate: '2024-08-19',
   modules: ['@nuxtjs/fontaine'],
   css: ['~/assets/css/fonts/font.css'],
+  compatibilityDate: '2024-08-19',
   fontMetrics: {
     fonts: [
       {

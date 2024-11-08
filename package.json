@@ -48,7 +48,7 @@
     "lint:all:eslint": "pnpm lint:eslint .",
     "lint:eslint": "eslint --fix",
     "prepack": "pnpm build",
-    "prepare": "husky install",
+    "prepare": "simple-git-hooks",
     "prepublishOnly": "pnpm lint && pnpm test",
     "release": "bumpp && npm publish",
     "test": "vitest run --coverage",
@@ -67,21 +67,25 @@
     "@nuxt/schema": "3.14.159",
     "@nuxt/test-utils": "3.14.4",
     "@types/node": "22.9.0",
-    "@types/serve-handler": "6.1.4",
     "@vitest/coverage-v8": "2.1.4",
     "bumpp": "9.8.1",
-    "conventional-changelog-conventionalcommits": "8.0.0",
     "eslint": "9.14.0",
-    "expect-type": "1.1.0",
-    "get-port-please": "3.1.2",
-    "husky": "9.1.6",
     "lint-staged": "15.2.10",
     "nuxt": "3.14.159",
     "rollup": "4.24.4",
-    "serve-handler": "6.1.6",
+    "simple-git-hooks": "^2.11.1",
     "typescript": "5.6.3",
+    "unbuild": "^2.0.0",
     "vitest": "2.1.4",
     "vue": "3.5.12"
+  },
+  "lint-staged": {
+    "*.{md,js,ts,mjs,cjs,json,.*rc}": [
+      "npx eslint --fix"
+    ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
   },
   "resolutions": {
     "@nuxt/kit": "3.14.159",
