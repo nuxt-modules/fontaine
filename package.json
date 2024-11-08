@@ -55,11 +55,11 @@
     "test:types": "tsc --noEmit"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.12.1",
+    "@nuxt/kit": "^3.14.159",
     "fontaine": "^0.5.0",
-    "magic-string": "^0.30.10",
+    "magic-string": "^0.30.12",
     "pathe": "^1.1.2",
-    "ufo": "^1.5.3"
+    "ufo": "^1.5.4"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "0.6.1",

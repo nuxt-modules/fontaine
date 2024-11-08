@@ -19,13 +19,13 @@ importers:
         specifier: ^0.5.0
         version: 0.5.0
       magic-string:
-        specifier: ^0.30.10
+        specifier: ^0.30.12
         version: 0.30.12
       pathe:
         specifier: ^1.1.2
         version: 1.1.2
       ufo:
-        specifier: ^1.5.3
+        specifier: ^1.5.4
         version: 1.5.4
     devDependencies:
       '@nuxt/eslint-config':
