@@ -67,7 +67,7 @@
     "@nuxt/schema": "3.14.159",
     "@nuxt/test-utils": "3.14.4",
     "@types/node": "22.9.0",
-    "@vitest/coverage-v8": "2.1.4",
+    "@vitest/coverage-v8": "2.1.5",
     "bumpp": "9.8.1",
     "eslint": "9.14.0",
     "lint-staged": "15.2.10",
@@ -76,7 +76,7 @@
     "simple-git-hooks": "2.11.1",
     "typescript": "5.6.3",
     "unbuild": "2.0.0",
-    "vitest": "2.1.4",
+    "vitest": "2.1.5",
     "vue": "3.5.12"
   },
   "lint-staged": {
