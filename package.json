@@ -62,17 +62,17 @@
     "ufo": "^1.5.4"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "0.7.1",
+    "@nuxt/eslint-config": "0.7.2",
     "@nuxt/module-builder": "0.8.4",
     "@nuxt/schema": "3.14.1592",
     "@nuxt/test-utils": "3.15.1",
-    "@types/node": "22.9.1",
+    "@types/node": "22.10.1",
     "@vitest/coverage-v8": "2.1.8",
-    "bumpp": "9.8.1",
+    "bumpp": "9.9.0",
     "eslint": "9.16.0",
-    "lint-staged": "15.2.10",
+    "lint-staged": "15.2.11",
     "nuxt": "3.14.1592",
-    "rollup": "4.27.3",
+    "rollup": "4.28.1",
     "simple-git-hooks": "2.11.1",
     "typescript": "5.6.3",
     "unbuild": "2.0.0",
@@ -91,5 +91,5 @@
     "@nuxt/kit": "3.14.1592",
     "@nuxtjs/fontaine": "link:."
   },
-  "packageManager": "pnpm@9.14.2"
+  "packageManager": "pnpm@9.15.0"
 }
