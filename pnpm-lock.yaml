@@ -68,8 +68,8 @@ importers:
         specifier: 5.6.3
         version: 5.6.3
       unbuild:
-        specifier: 3.0.0
-        version: 3.0.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
+        specifier: 3.0.1
+        version: 3.0.1(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
       vitest:
         specifier: 2.1.8
         version: 2.1.8(@types/node@22.10.2)(terser@5.37.0)
@@ -4004,8 +4004,8 @@ packages:
       typescript:
         optional: true
 
-  unbuild@3.0.0:
-    resolution: {integrity: sha512-yl9heYNwhy7GjUZEIiHFQrLJIIfMgoAWEKq+JfVEKHnLOtQjvsUj7T59OANOxkWD81epV3JH4lg4RO+BQ/NGDA==}
+  unbuild@3.0.1:
+    resolution: {integrity: sha512-03Fv1B8hmJzYCdL4TDgmgBg1WMU0CB5P2tBqPCW7XAvZG/l275m6JU/xf2tJ4yuUeHtmSzg1G387Te9nlsufFA==}
     hasBin: true
     peerDependencies:
       typescript: ^5.7.2
@@ -8797,7 +8797,7 @@ snapshots:
       - supports-color
       - vue-tsc
 
-  unbuild@3.0.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)):
+  unbuild@3.0.1(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)):
     dependencies:
       '@rollup/plugin-alias': 5.1.1(rollup@4.28.1)
       '@rollup/plugin-commonjs': 28.0.1(rollup@4.28.1)
