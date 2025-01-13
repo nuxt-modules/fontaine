@@ -20,6 +20,8 @@
     "url": "https://github.com/danielroe"
   },
   "type": "module",
+  "main": "./dist/module.mjs",
+  "types": "./dist/types.d.mts",
   "exports": {
     ".": {
       "types": "./dist/types.d.mts",
