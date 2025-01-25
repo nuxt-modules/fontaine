@@ -88,8 +88,7 @@ Nuxt will scan your `@font-face` rules and generate fallback rules with the corr
 /* This will be generated. */
 @font-face {
   font-family: 'Roboto fallback';
-  src: local('BlinkMacSystemFont'), local('Segoe UI'), local('Roboto'), local('Helvetica Neue'),
-    local('Arial'), local('Noto Sans');
+  src: local('Segoe UI'), local('Roboto'), local('Helvetica Neue'), local('Arial'), local('Noto Sans');
   ascent-override: 92.7734375%;
   descent-override: 24.4140625%;
   line-gap-override: 0%;
