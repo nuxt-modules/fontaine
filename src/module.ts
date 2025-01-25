@@ -57,7 +57,7 @@ export default defineNuxtModule<ModuleOptions>({
   defaults: nuxt => ({
     inject: true,
     inline: nuxt.options.ssr,
-    fallbacks: ['BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans'],
+    fallbacks: ['Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans'],
     fonts: [],
   }),
   async setup(options, nuxt) {
