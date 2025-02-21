@@ -59,19 +59,19 @@
     "test:types": "tsc --noEmit"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.14.159",
+    "@nuxt/kit": "^3.15.4",
     "fontaine": "^0.5.0",
-    "magic-string": "^0.30.12",
-    "pathe": "^2.0.0",
+    "magic-string": "^0.30.17",
+    "pathe": "^2.0.3",
     "ufo": "^1.5.4"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "1.0.1",
+    "@nuxt/eslint-config": "1.1.0",
     "@nuxt/module-builder": "1.0.0-alpha.1",
     "@nuxt/schema": "3.15.4",
     "@nuxt/test-utils": "3.17.0",
     "@types/node": "22.13.4",
-    "@vitest/coverage-v8": "3.0.5",
+    "@vitest/coverage-v8": "3.0.6",
     "bumpp": "10.0.3",
     "eslint": "9.20.1",
     "lint-staged": "15.4.3",
@@ -80,7 +80,7 @@
     "simple-git-hooks": "2.11.1",
     "typescript": "5.7.3",
     "unbuild": "3.3.1",
-    "vitest": "3.0.5",
+    "vitest": "3.0.6",
     "vue": "3.5.13"
   },
   "lint-staged": {
