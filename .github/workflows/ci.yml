@@ -17,7 +17,7 @@ jobs:
       - run: corepack enable
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: lts/-1
           cache: "pnpm"
 
       - name: 📦 Install dependencies
@@ -40,7 +40,7 @@ jobs:
       - run: corepack enable
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: lts/-1
           cache: "pnpm"
 
       - name: 📦 Install dependencies
