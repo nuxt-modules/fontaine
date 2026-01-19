@@ -81,7 +81,7 @@
     "typescript": "5.9.3",
     "unbuild": "3.6.1",
     "vitest": "4.0.17",
-    "vue": "3.5.26"
+    "vue": "3.5.27"
   },
   "lint-staged": {
     "*.{md,js,ts,mjs,cjs,json,.*rc}": [
