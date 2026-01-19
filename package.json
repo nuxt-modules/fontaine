@@ -76,7 +76,7 @@
     "eslint": "9.39.2",
     "lint-staged": "16.2.7",
     "nuxt": "3.20.2",
-    "rollup": "4.55.1",
+    "rollup": "4.55.2",
     "simple-git-hooks": "2.13.1",
     "typescript": "5.9.3",
     "unbuild": "3.6.1",
