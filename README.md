@@ -4,6 +4,7 @@
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![Github Actions][github-actions-src]][github-actions-href]
 [![Codecov][codecov-src]][codecov-href]
+[![nuxt.care health](https://img.shields.io/endpoint?url=https://nuxt.care/api/badge/fontaine)](https://nuxt.care/?search=fontaine)
 
 > Font metric fallback implementation for [Nuxt 3](https://v3.nuxtjs.org)
 
