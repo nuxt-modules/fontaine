@@ -66,11 +66,11 @@
     "ufo": "^1.5.4"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "1.14.0",
+    "@nuxt/eslint-config": "1.15.1",
     "@nuxt/module-builder": "1.0.2",
     "@nuxt/schema": "3.21.1",
     "@nuxt/test-utils": "3.23.0",
-    "@types/node": "24.10.12",
+    "@types/node": "24.10.13",
     "@vitest/coverage-v8": "4.0.18",
     "bumpp": "10.4.1",
     "eslint": "10.0.0",
@@ -95,5 +95,5 @@
     "@nuxt/kit": "3.21.1",
     "@nuxtjs/fontaine": "link:."
   },
-  "packageManager": "pnpm@10.29.2"
+  "packageManager": "pnpm@10.29.3"
 }
