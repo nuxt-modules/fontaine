@@ -59,7 +59,7 @@
     "test:types": "tsc --noEmit"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.15.4",
+    "@nuxt/kit": "^4.0.0",
     "fontaine": "^0.8.0",
     "magic-string": "^0.30.17",
     "pathe": "^2.0.3",
@@ -68,14 +68,14 @@
   "devDependencies": {
     "@nuxt/eslint-config": "1.15.1",
     "@nuxt/module-builder": "1.0.2",
-    "@nuxt/schema": "3.21.1",
-    "@nuxt/test-utils": "3.23.0",
+    "@nuxt/schema": "4.3.1",
+    "@nuxt/test-utils": "4.0.0",
     "@types/node": "24.10.13",
     "@vitest/coverage-v8": "4.0.18",
     "bumpp": "10.4.1",
     "eslint": "10.0.1",
     "lint-staged": "16.2.7",
-    "nuxt": "3.21.1",
+    "nuxt": "4.3.1",
     "rollup": "4.59.0",
     "simple-git-hooks": "2.13.1",
     "typescript": "5.9.3",
@@ -92,7 +92,7 @@
     "pre-commit": "npx lint-staged"
   },
   "resolutions": {
-    "@nuxt/kit": "3.21.1",
+    "@nuxt/kit": "^4.0.0",
     "@nuxtjs/fontaine": "link:."
   },
   "packageManager": "pnpm@10.30.1"
