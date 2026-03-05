@@ -133,9 +133,9 @@ Published under the [MIT License](./LICENCE).
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/@nuxtjs/fontaine?style=flat-square
-[npm-version-href]: https://npmjs.com/package/@nuxtjs/fontaine
-[npm-downloads-src]: https://img.shields.io/npm/dm/@nuxtjs/fontaine?style=flat-square
+[npm-version-src]: https://npmx.dev/api/registry/badge/version/@nuxtjs/fontaine
+[npm-version-href]: https://npmx.dev/package/@nuxtjs/fontaine
+[npm-downloads-src]: https://npmx.dev/api/registry/badge/downloads/@nuxtjs/fontaine
 [npm-downloads-href]: https://npm.chart.dev/@nuxtjs/fontaine
 [github-actions-src]: https://img.shields.io/github/workflow/status/nuxt-modules/fontaine/ci/main?style=flat-square
 [github-actions-href]: https://github.com/nuxt-modules/fontaine/actions/workflows/ci.yml
