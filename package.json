@@ -95,5 +95,5 @@
     "@nuxt/kit": "3.21.1",
     "@nuxtjs/fontaine": "link:."
   },
-  "packageManager": "pnpm@10.31.0"
+  "packageManager": "pnpm@10.32.0"
 }
