@@ -76,7 +76,7 @@
     "eslint": "10.1.0",
     "lint-staged": "16.4.0",
     "nuxt": "3.21.2",
-    "rollup": "4.60.0",
+    "rollup": "4.60.1",
     "simple-git-hooks": "2.13.1",
     "typescript": "6.0.2",
     "unbuild": "3.6.1",
@@ -95,5 +95,5 @@
     "@nuxt/kit": "3.21.2",
     "@nuxtjs/fontaine": "link:."
   },
-  "packageManager": "pnpm@10.32.1"
+  "packageManager": "pnpm@10.33.0"
 }
