@@ -9,3 +9,7 @@ ignoredBuiltDependencies:
 onlyBuiltDependencies:
   - simple-git-hooks
 
+
+overrides:
+  "@nuxt/kit": "^4.0.0"
+  "@nuxtjs/fontaine": "link:."
