@@ -76,7 +76,7 @@
     "eslint": "10.3.0",
     "lint-staged": "16.4.0",
     "nuxt": "4.4.4",
-    "rollup": "4.60.2",
+    "rollup": "4.60.3",
     "simple-git-hooks": "2.13.1",
     "typescript": "6.0.3",
     "unbuild": "3.6.1",
@@ -91,5 +91,5 @@
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
   },
-  "packageManager": "pnpm@10.33.2"
+  "packageManager": "pnpm@10.33.3"
 }
