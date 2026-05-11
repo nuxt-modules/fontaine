@@ -70,7 +70,7 @@
     "@nuxt/module-builder": "1.0.2",
     "@nuxt/schema": "4.4.5",
     "@nuxt/test-utils": "4.0.3",
-    "@types/node": "24.12.3",
+    "@types/node": "24.12.4",
     "@vitest/coverage-v8": "4.1.6",
     "bumpp": "11.1.0",
     "eslint": "10.3.0",
