@@ -70,13 +70,13 @@
     "@nuxt/module-builder": "1.0.2",
     "@nuxt/schema": "4.4.7",
     "@nuxt/test-utils": "4.0.3",
-    "@types/node": "24.12.4",
+    "@types/node": "24.13.1",
     "@vitest/coverage-v8": "4.1.8",
     "bumpp": "11.1.0",
     "eslint": "10.4.1",
     "lint-staged": "17.0.7",
     "nuxt": "4.4.7",
-    "rollup": "4.61.0",
+    "rollup": "4.61.1",
     "simple-git-hooks": "2.13.1",
     "typescript": "6.0.3",
     "unbuild": "3.6.1",
@@ -91,5 +91,5 @@
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
   },
-  "packageManager": "pnpm@11.5.1"
+  "packageManager": "pnpm@11.5.2"
 }
