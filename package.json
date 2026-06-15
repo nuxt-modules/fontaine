@@ -66,17 +66,17 @@
     "ufo": "^1.5.4"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "1.15.2",
+    "@nuxt/eslint-config": "1.16.0",
     "@nuxt/module-builder": "1.0.2",
     "@nuxt/schema": "4.4.8",
     "@nuxt/test-utils": "4.0.3",
-    "@types/node": "24.13.1",
+    "@types/node": "24.13.2",
     "@vitest/coverage-v8": "4.1.8",
     "bumpp": "11.1.0",
     "eslint": "10.4.1",
     "lint-staged": "17.0.7",
     "nuxt": "4.4.8",
-    "rollup": "4.61.1",
+    "rollup": "4.62.0",
     "simple-git-hooks": "2.13.1",
     "typescript": "6.0.3",
     "unbuild": "3.6.1",
@@ -91,5 +91,5 @@
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
   },
-  "packageManager": "pnpm@11.5.2"
+  "packageManager": "pnpm@11.6.0"
 }
