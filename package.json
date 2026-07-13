@@ -70,7 +70,7 @@
     "@nuxt/module-builder": "1.0.2",
     "@nuxt/schema": "4.4.8",
     "@nuxt/test-utils": "4.0.3",
-    "@types/node": "24.13.2",
+    "@types/node": "24.13.3",
     "@vitest/coverage-v8": "4.1.9",
     "bumpp": "11.1.0",
     "eslint": "10.6.0",
@@ -91,5 +91,5 @@
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
   },
-  "packageManager": "pnpm@11.10.0"
+  "packageManager": "pnpm@11.12.0"
 }
