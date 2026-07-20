@@ -74,7 +74,7 @@
     "@vitest/coverage-v8": "4.1.10",
     "bumpp": "11.1.0",
     "eslint": "10.7.0",
-    "lint-staged": "17.0.8",
+    "lint-staged": "17.1.0",
     "nuxt": "4.5.0",
     "rollup": "4.62.2",
     "simple-git-hooks": "2.13.1",
@@ -91,5 +91,5 @@
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
   },
-  "packageManager": "pnpm@11.12.0"
+  "packageManager": "pnpm@11.15.1"
 }
