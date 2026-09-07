@@ -73,7 +73,7 @@
     "@types/node": "24.13.3",
     "@vitest/coverage-v8": "4.1.11",
     "bumpp": "12.3.0",
-    "eslint": "10.9.1",
+    "eslint": "10.10.0",
     "lint-staged": "17.5.0",
     "nuxt": "4.5.2",
     "rollup": "4.63.1",
