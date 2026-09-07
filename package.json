@@ -72,9 +72,9 @@
     "@nuxt/test-utils": "4.2.0",
     "@types/node": "24.13.3",
     "@vitest/coverage-v8": "4.1.11",
-    "bumpp": "12.2.2",
+    "bumpp": "12.3.0",
     "eslint": "10.9.1",
-    "lint-staged": "17.4.1",
+    "lint-staged": "17.5.0",
     "nuxt": "4.5.2",
     "rollup": "4.63.1",
     "simple-git-hooks": "2.14.0",
@@ -91,5 +91,5 @@
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
   },
-  "packageManager": "pnpm@11.24.0"
+  "packageManager": "pnpm@11.25.0"
 }
