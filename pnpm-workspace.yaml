@@ -3,7 +3,7 @@ packages:
 
 overrides:
   "@nuxt/kit": "^4.0.0"
-  "@nuxtjs/fontaine": "link:."
+  "@nuxtjs/fontaine": "workspace:*"
 
 allowBuilds:
   "@parcel/watcher": false
