@@ -1,8 +1,8 @@
 packages:
   - playground
+  - playground-v5
 
 overrides:
-  "@nuxt/kit": "^4.0.0"
   "@nuxtjs/fontaine": "workspace:*"
 
 allowBuilds:
@@ -10,3 +10,8 @@ allowBuilds:
   esbuild: false
   simple-git-hooks: true
   unrs-resolver: false
+
+minimumReleaseAgeExclude:
+  - '@nuxt/*'
+  - nuxt-nightly
+  - nuxt@4.6.1
