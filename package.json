@@ -72,13 +72,13 @@
     "@nuxt/module-builder": "1.0.3",
     "@nuxt/schema": "4.6.1",
     "@nuxt/test-utils": "4.3.3",
-    "@types/node": "24.19.1",
+    "@types/node": "24.19.2",
     "@vitest/coverage-v8": "5.0.3",
     "bumpp": "12.3.0",
     "eslint": "10.12.0",
     "lint-staged": "17.6.0",
     "nuxt": "4.6.1",
-    "rollup": "4.64.0",
+    "rollup": "4.64.5",
     "simple-git-hooks": "2.14.0",
     "typescript": "6.0.3",
     "unbuild": "3.6.1",
@@ -101,7 +101,7 @@
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "12.9.1",
+      "version": "12.11.2",
       "onFail": "download"
     }
   }
