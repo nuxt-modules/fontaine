@@ -78,7 +78,7 @@
     "eslint": "10.12.0",
     "lint-staged": "17.6.0",
     "nuxt": "4.6.2",
-    "rollup": "4.64.5",
+    "rollup": "4.64.9",
     "simple-git-hooks": "2.14.0",
     "typescript": "6.0.3",
     "unbuild": "3.6.1",
@@ -101,7 +101,7 @@
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "12.11.2",
+      "version": "12.14.0",
       "onFail": "download"
     }
   }
