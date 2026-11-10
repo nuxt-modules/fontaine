@@ -106,6 +106,30 @@ Then, whenever you use `font-family: 'Roboto'`, Nuxt will add the fallback to th
 }
 ```
 
+## Using Sass, Less or Stylus
+
+The module runs fontaine before your preprocessor, so it only sees the raw source of the files your bundler treats as modules. If your `@font-face` rules live in a Sass, Less or Stylus partial, come from a mixin, or are pulled in with an `@import`, fontaine never sees them: the preprocessor inlines all of that first. A `font-family` set from a preprocessor variable has the same problem, because the variable still has no value when fontaine reads the source.
+
+For these setups, turn off the module's transform and run the PostCSS plugin from the core [`fontaine`](https://github.com/unjs/fontaine) package instead. PostCSS runs after your preprocessor, so it reads plain CSS:
+
+```ts
+export default defineNuxtConfig({
+  modules: ['@nuxtjs/fontaine'],
+  fontMetrics: { inject: false },
+  postcss: {
+    plugins: {
+      'fontaine/postcss': {
+        fallbacks: ['Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans'],
+      },
+    },
+  },
+})
+```
+
+Do not run both at once. With the module's transform left on, the fallbacks are generated twice.
+
+The trade-off is that the fallback `@font-face` rules are no longer inlined into the page head with `inject: false`, so the stylesheet serves them instead. The core [`fontaine`](https://github.com/unjs/fontaine#using-sass-less-or-stylus) docs cover the PostCSS plugin in more detail.
+
 ## Using outside of Nuxt
 
 The core of this module will work outside of Nuxt, and has been separated into a separate library: [`fontaine`](https://github.com/unjs/fontaine). Check it out!
